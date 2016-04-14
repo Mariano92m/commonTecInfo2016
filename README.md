@@ -41,6 +41,9 @@ Si desea controlar si el repositorio esta actualizado realizar
 
     git checkout
 
+Para ver los commits que se realizaron hacer
+
+    git log
 
 
 Cualquier cosa agregaremos mas
