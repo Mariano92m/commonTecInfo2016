@@ -3,6 +3,7 @@
 Repositorio del informatorio para el grupo commonTec
 
 ------------0-------------
+
 Realizar Click derecho dentro de la carpeta en la que quieras guardar tu repositorio
 Click en Git Bash Here
 
