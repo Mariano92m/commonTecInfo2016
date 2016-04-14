@@ -3,6 +3,16 @@
 Repositorio del informatorio para el grupo commonTec
 
 ------------0-------------
+Para iniciar sesion en la consola de comando
+
+    git config --global --unset user.name
+    git config --global --unset user.email
+
+Para salir de la sesion en la consola
+
+    git config --global --unset-all
+
+
 
 Realizar Click derecho dentro de la carpeta en la que quieras guardar tu repositorio
 
