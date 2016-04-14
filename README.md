@@ -34,8 +34,7 @@ Luego colocar un comentario para los archivos agregados
 
 Una ves terminado eso realizar un push
 
-    git push . (Sirve para pushear todos los archivos al repositorio)
-    git push nombredearchivo.txt (Se realiza el push de un archivo en especifico)
+    git push -u origin master (la palabra master puede variar dado a que se debe ingresar el nombre del branch)
 
 Si desea controlar si el repositorio esta actualizado realizar
 
