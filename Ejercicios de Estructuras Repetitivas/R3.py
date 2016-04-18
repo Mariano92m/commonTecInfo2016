@@ -8,14 +8,16 @@ while salir!=True:
 
 	usuarios= int(input("Ingrese la cantidad de usuarios: "))
 
-	for i in range(usuarios):
+	while i<usuarios:
 		
 		print("") #Espacio
 		
 		nombreEmpleado=input("Ingrese el nombre del vendedor: ")
-		for j in range(1, 13):
+		while j<=12:
 			ventaPorMes= int(input(("Ingrese la venta del mes %s: ")%(j)))
 			ventaTotal=ventaTotal+ventaPorMes
+			j=j+1
+		i=i+1
 
 	print("") #Espacio
 	print("") #Espacio

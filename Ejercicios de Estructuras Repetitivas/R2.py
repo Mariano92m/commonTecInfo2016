@@ -4,7 +4,7 @@ sumSueld=0
 cobranMas=0
 cobranMenos=0
 
-for i in range(contEmpleados):
+while i< contEmpleados:
 	sueldo=int(input("Ingrese su sueldo, recuerde que cobra entre 100 y 500: "))
 
 	if(sueldo<300):
@@ -13,6 +13,7 @@ for i in range(contEmpleados):
 		cobranMas=cobranMas+1
 
 	sumSueld=sumSueld+sueldo
+	i=i+1
 
 print("%s empleados cobran menos y %s cobran mas"%(cobranMenos, cobranMas))
 print("La empresa gastara $ %s para saldar los sueldos del personal"%(sumSueld))
