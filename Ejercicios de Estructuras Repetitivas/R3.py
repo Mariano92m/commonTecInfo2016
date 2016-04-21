@@ -4,20 +4,20 @@ j=1
 ventaTotal=0
 salir=False
 
-while salir!=True:
+usuarios= int(input("Ingrese la cantidad de usuarios: "))
 
-	usuarios= int(input("Ingrese la cantidad de usuarios: "))
 
-	while i<usuarios:
-		
-		print("") #Espacio
-		
-		nombreEmpleado=input("Ingrese el nombre del vendedor: ")
-		while j<=12:
-			ventaPorMes= int(input(("Ingrese la venta del mes %s: ")%(j)))
-			ventaTotal=ventaTotal+ventaPorMes
-			j=j+1
-		i=i+1
+
+while (i<usuarios) and (salir!=True):
+	
+	print("") #Espacio
+	
+	nombreEmpleado=input("Ingrese el nombre del vendedor: ")
+	while j<=12:
+		ventaPorMes= int(input(("Ingrese la venta del mes %s: ")%(j)))
+		ventaTotal=ventaTotal+ventaPorMes
+		j=j+1
+	i=i+1
 
 	print("") #Espacio
 	print("") #Espacio
@@ -29,8 +29,8 @@ while salir!=True:
 		salir=True
 
 
-	print("") #Espacio
-	print("") #Espacio
-	print("") #Espacio
+print("") #Espacio
+print("") #Espacio
+print("") #Espacio
 
 print("El total de ventas registrado es %s"%(ventaTotal))
