@@ -42,6 +42,3 @@ def entBill(pesos):
 		print("Y %s monedas, para completar %s pesos"%(moneda,pesos))
 	else:
 		print("Ingreso un valor con decimal")
-
-plata=int(input("Ingrese un importe: "))
-entBill(plata)

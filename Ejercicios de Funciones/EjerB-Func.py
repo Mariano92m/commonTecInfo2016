@@ -3,5 +3,3 @@ def impval (n):
 	for x in range (n+1):
 		tot +=x
 	return tot
-x=int(input("Ingrese el numero para probar la funcion   "))
-print impval(x)

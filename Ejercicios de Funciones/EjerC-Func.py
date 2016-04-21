@@ -6,5 +6,3 @@ def impvals(m):
 		for x in range (m,0,-1):
 			print x
 
-x=int(input("Ingrese el numero para probar la funcion  "))
-impvals(x)

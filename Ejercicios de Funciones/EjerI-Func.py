@@ -9,6 +9,3 @@ def tipo(k):
 		return ("deficiente")
 	else:
 		return ("abundante")
-
-x=int(input("Ingrese el numero a evaluar  "))
-print "El numero es ",tipo(x)

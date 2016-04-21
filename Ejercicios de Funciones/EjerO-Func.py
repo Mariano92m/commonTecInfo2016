@@ -9,9 +9,3 @@ def sumeq(x,y,z):
 		print "El segundo numero es igual a la suma del primero y el tercero"
 	else:
 		print "Ningun numero es igual a la suma de los otros dos"
-
-x = int(input("Ingrese el primer numero  "))
-y = int(input("Ingrese el segundo numero  "))
-z = int(input("Ingrese el tercer numero  "))
-
-sumeq(x,y,z)

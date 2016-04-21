@@ -6,5 +6,3 @@ def prom(n):
 		cont= cont+1
 	result= res/cont
 	return result
-x = int(input("Ingrese el numero hasta donde promediar  "))
-print prom(x)

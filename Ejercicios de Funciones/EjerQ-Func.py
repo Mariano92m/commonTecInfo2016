@@ -1,5 +1,3 @@
-a = int(raw_input("\n Ingrese un numero entero : "))
-b = raw_input("\n Ingrese un string : ")
 def Argumeto(entero,letras):
 	
 	cont=0
@@ -12,4 +10,3 @@ def Argumeto(entero,letras):
 	elif(entero!=cont):
 		print "\nEl string que ingreso no tiene la misma cantidad(",cont,")"
 		print "de letras que se indica en el numero entero(",entero,")"
-Argumeto(a,b)

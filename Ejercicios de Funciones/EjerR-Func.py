@@ -17,6 +17,3 @@ def prime (x):
 	if Seg == "S":
 		x=int(input("Ingrese el numero que desea evaluar  "))
 		prime (x)
-
-x=int(input("Ingrese el numero que desea evaluar  "))
-prime (x)
