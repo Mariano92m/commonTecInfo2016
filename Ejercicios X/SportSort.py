@@ -94,39 +94,43 @@ print("El porcentaje de persona que no hacen deporte es de  %",(((cantP-(contH+c
 print("")#Espacio
 print("El porcentaje de personas que hacen deporte es de %",(((contH+contM)*100)/cantP))
 print("")#Espacio
-print("El porcentaje de hombres que hacen deporte es de %",((contH*100)/(contH+contM))
-print("El porcentaje de mujeres que hacen deporte es de %",((contM*100)/(contH+contM))
+if(contH>0):
+	print("El porcentaje de hombres que hacen deporte es de %",((contH*100)/(contH+contM)))
+if(contM>0):
+	print("El porcentaje de mujeres que hacen deporte es de %",((contM*100)/(contH+contM)))
 
 if(contH*100)/cantP>(contM*100)/cantP:
 	print("Hay un mayor porcentaje de hombres que realizan deportes")
 else:
 	print("Hay un mayor porcentaje de mujeres que realizan deportes")
 
-print("")#Espacio
-print("")#Espacio
-print("")#Espacio
+	print("")#Espacio
+	print("")#Espacio
 
-print("El porcentaje de hombres mayores de edad que hacen deporte es de %",((contMayorDeEdadH*100)/contH))
-print("El porcentaje de hombres menores de edad que hacen deporte es de %",((contMenorDeEdadH*100)/contH))
-
-print("")#Espacio
-
-if(contMayorDeEdadH*100)/contH>(contMenorDeEdadH*100)/contH:
-	print("Hay un mayor porcentaje de hombres mayores de edad que realizan deporte")
-else:
-	print("Hay un mayor porcentaje de hombres menores de edad que realizan deporte")
-
-
-print("")#Espacio
-print("")#Espacio
-
-
-print("El porcentaje de mujeres mayores de edad que hacen deporte es de %",((contMayorDeEdadM*100)/contM))
-print("El porcentaje de mujeres menores de edad que hacen deporte es de %",((contMenorDeEdadM*100)/contM))
+if(contH>0):
+	print("El porcentaje de hombres mayores de edad que hacen deporte es de %",((contMayorDeEdadH*100)/contH))
+	print("El porcentaje de hombres menores de edad que hacen deporte es de %",((contMenorDeEdadH*100)/contH))
 
 print("")#Espacio
 
-if(contMayorDeEdadM*100)/contM>(contMenorDeEdadM*100)/contM:
-	print("Hay un mayor porcentaje de mujeres mayores de edad que realizan deporte")
-else:
-	print("Hay un mayor porcentaje de mujeres menores de edad que realizan deporte")
+if(contH>0):
+	if(contMayorDeEdadH*100)/contH>(contMenorDeEdadH*100)/contH:
+		print("Hay un mayor porcentaje de hombres mayores de edad que realizan deporte")
+	else:
+		print("Hay un mayor porcentaje de hombres menores de edad que realizan deporte")
+
+
+	print("")#Espacio
+	print("")#Espacio
+
+if(contM>0):
+	print("El porcentaje de mujeres mayores de edad que hacen deporte es de %",((contMayorDeEdadM*100)/contM))
+	print("El porcentaje de mujeres menores de edad que hacen deporte es de %",((contMenorDeEdadM*100)/contM))
+
+	print("")#Espacio
+
+if(contM>0):
+	if(contMayorDeEdadM*100)/contM>(contMenorDeEdadM*100)/contM:
+		print("Hay un mayor porcentaje de mujeres mayores de edad que realizan deporte")
+	else:
+		print("Hay un mayor porcentaje de mujeres menores de edad que realizan deporte")
