@@ -1,7 +1,7 @@
-from Crypto.Random import random
+import random
 def ronda(j1):
 	print(" ")
-	j2= random.choice(['A', 'C', 'D'])
+	j2= random.randint(1,3)
 	if j2==1:
 		j2="A"
 	elif j2==2:
