@@ -46,8 +46,15 @@ def ronda(j1):
 		elif j2=="A":
 			print ("Perdiste! El enemigo te ha atacado")
 	print(" ")
-print ("Bienvenido a Juego de Tronos")
+
+
+print ("*********************************************************************")
+print ("                       Juego de tronos                                        designed by /commonTec: real game engineering/")
+print ("*********************************************************************")
 print(" ")
+print(" ")
+print ("Bienvenido a Juego de tronos!")
+print ("El juego de rol que no deja de atraparte")
 contusu=0
 contpc=0
 nom=input("Ingrese el nombre de su personaje:  ")

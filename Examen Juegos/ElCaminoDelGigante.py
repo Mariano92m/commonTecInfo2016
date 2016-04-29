@@ -1,22 +1,27 @@
-#Situaciion Problematica B
-print("\n- Camino del Gigante -")
-
+print ("*********************************************************************")
+print ("                       El camino del gigante                                        designed by /commonTec: real game engineering/")
+print ("*********************************************************************")
+print(" ")
+print(" ")
+print ("Bienvenido a El camino del gigante!")
+print ("El juego que todos estaban esperando")
 print("") #Espacio
+print(" ")
 #Introduccion
-print("""- Bienvenido a 'Camino del Gigante' -
+print("""
 	Tu objetivo es que el gigante llegue a su Caverna.
 	Supongamos que se llama Bob.
 	Tienes 3 intentos lanzando el dado para sumar pasos al gigante.
 	\nEmpecemos...""")
-
+print(" ")
 print ("\nBob necesita dar 20 pasos para llegar a su caverna, si Bob da mas de 20 pasos cae a un precipicio")
-
+print(" ")
 #Variables
 import random
 pasos = random.randint(1,20)
 tiradas = random.randint(1,3)
 llegada = 20
-
+print(" ")
 #Pasos realizados y faltantes
 print (("-El Gigante ha caminado %s pasos-")%(pasos))
 restante = (20 - (pasos))
@@ -47,7 +52,7 @@ while intentos <= 3:
 		#Precipicio
 	elif pasos > llegada:
 		dado == "x"
-		print ("\nHas superado la cantidad de pasos! \nCaiste al precipicio")
+		print ("\n Lo sentimos: has superado la cantidad de pasos. \nCaiste al precipicio!")
 		intentos = 4
 
 
@@ -55,7 +60,7 @@ while intentos <= 3:
 		#En el caso de que se gane...
 		if pasos == llegada:
 			intentos = 4
-			print("\nHas llevado a Bob a la caverna!\n Ganaste! :) ")
+			print("\nHas llevado a Bob a la caverna!\n Ganaste!")
 
 
 
@@ -64,5 +69,5 @@ while intentos <= 3:
 		break
 
 
-print ("\nBob no lo ha conseguido\n   - GAME OVER - ")
+print ("\nBob no lo ha conseguido!\n   - GAME OVER - ")
 

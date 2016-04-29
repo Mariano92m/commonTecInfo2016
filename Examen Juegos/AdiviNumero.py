@@ -1,31 +1,32 @@
-# Curso Avanzado de Desarrollo de Aplicaciones Informaticas
-#Examen 1 - Level 1
-
-#Adrian Lopez
-
-#Situaciion Problematica A
-print ("\n- AdiviNumero -")
-
 import random
+print ("*********************************************************************")
+print ("                       AdiviNumero                                            designed by /commonTec: real game engineering/")
+print ("*********************************************************************")
+print(" ")
+print(" ")
+print ("Bienvenido a AdiviNumero!")
+print ("El juego de adivinanzas ideal para la familia")
 n = random.randint(1,100)
-
+print (" ")
+print (" ")
 intentos = 1
 print ("Adivina un Numero del 1 al 100\n(Tienes 5 intentos)")
-
+print (" ")
 #Con 5 intentos
 while intentos <= 5:
 	numeroIngresado = int(input("\nCual es el numero?:"))
-
+print (" ")
 	if numeroIngresado > n:
-		print (("\nEl numero es menor al que ingresaste\n*Ya has hecho %s intentos*")%(intentos))
+		print (("\nEl numero es menor al que ingresaste\nYa has hecho %s intentos")%(intentos))
 	
 	elif numeroIngresado < n:
-		print (("\nEl numero es mayor al que ingresaste\n*Ya has hecho %s intentos*")%(intentos))
+		print (("\nEl numero es mayor al que ingresaste\nYa has hecho %s intentos")%(intentos))
 	intentos += 1
 
 	#Se queda sin intentos
 	while intentos > 5:
-		print ("\nJuego Terminado! -Te has quedado sin intentos-")
+		print ("\nLo sentimos: re has quedado sin intentos-- Juego Terminado!")
+		print(" ")
 		continuar = input("Quieres volver a empezar?(s/n): \n>:")
 
 		if continuar == ("s"):
@@ -37,17 +38,6 @@ while intentos <= 5:
 
 	#Si ganan...
 	if numeroIngresado == n:
-		print ("\nEse es el numero!\nFELICIDADES\nHas ganado!!!")
+		print ("\nBien hecho: ese es el numero!\nHas ganado el juego!")
 		
 		break
-
-
-#Final de la Situacion Problematica A
-
-#
-#
-#
-#
-#
-
-

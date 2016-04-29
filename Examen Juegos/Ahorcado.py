@@ -10,13 +10,22 @@
 #- El jugador puede solicitar una pista, en cuyo caso, el juego ofrecerá una letra de la palabra pero el
 #jugador perderá un intento.
 import random
-
+print ("*********************************************************************")
+print ("                           El Ahorcado                                         designed by /commonTec: real game engineering/")
+print ("*********************************************************************")
+print(" ")
+print(" ")
+print ("Bienvenido a El Ahorcado!")
+print ("El juego de palabras preferido entre amigos")
 a =["1","2","3","4","5"]
-letra1 = str(raw_input("\nIngrese la primera letra : "))
-letra2 = str(raw_input("\nIngrese la segunda letra : "))
-letra3 = str(raw_input("\nIngrese la tercera letra : "))
-letra4 = str(raw_input("\nIngrese la cuarta letra  : "))
-letra5 = str(raw_input("\nIngrese la quinta letra  : "))
+print (" ")
+print(" ")
+letra1 = str(raw_input("\nIngrese la primera letra:   "))
+letra2 = str(raw_input("\nIngrese la segunda letra:   "))
+letra3 = str(raw_input("\nIngrese la tercera letra:   "))
+letra4 = str(raw_input("\nIngrese la cuarta letra:   "))
+letra5 = str(raw_input("\nIngrese la quinta letra:   "))
+print (" ")
 error=0
 ganador=0
 ayuda=0
@@ -35,34 +44,34 @@ while (error<4 and ganador<=4):
 			a[i]="gano"
 			ganador+=1
 			acerto=True
-			print "\nAcerto con la letra",jugador
+			print "\nAcerto con la letra!",jugador
 			i=6
 		i+=1
 	if(acerto==False):
-		print "\nNo acerto con la letra ",jugador
+		print "\nLo siento: no acerto con la letra",jugador
 		error+=1
 		ayuda = random.randint(1,6)
 		if(ayuda>=3):
 			if(a[0]!="gano"):
-				print "\nTE DOY UNA AYUDA, UNA DE LAS LETRA ES ",a[0]
+				print "\nTe daremos una ayuda, una de las letras es:  ",a[0]
 				continue
 			elif(a[1]!="gano"):
-				print "\nTE DOY UNA AYUDA, UNA DE LAS LETRA ES ",a[1]
+				print "\nTe daremos una ayuda, una de las letras es:  ",a[1]
 				continue
 			elif(a[2]!="gano"):
-				print "\nTE DOY UNA AYUDA, UNA DE LAS LETRA ES ",a[2]
+				print "\nTe daremos una ayuda, una de las letras es:  ",a[2]
 				continue
 			elif(a[3]!="gano"):
-				print "\nTE DOY UNA AYUDA, UNA DE LAS LETRA ES ",a[3]
+				print "\nTe daremos una ayuda, una de las letras es:  ",a[3]
 				continue
 			elif(a[4]!="gano"):
-				print "\nTE DOY UNA AYUDA, UNA DE LAS LETRA ES ",a[4]
+				print "\nTe daremos una ayuda, una de las letras es:  ",a[4]
 				continue
 if(error==4):	
-	print "\nUSTED QUEDO AHORCADO Y PERDIO  :("
-	print "\n Esta fue la palabra que eligio su contrario ",letra1,letra2,letra3,letra4,letra5
+	print "\nHoy no es su dia: usted quedo ahorcado!"
+	print "\n Esta fue la palabra que eligio su oponente:   ",letra1,letra2,letra3,letra4,letra5
 elif ganador==5:
-	print "\nGANO EL JUEGO"
+	print "\nFelicidades: gano el juego!!!"
 
 
 
