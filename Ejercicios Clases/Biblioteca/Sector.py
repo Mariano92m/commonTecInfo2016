@@ -3,5 +3,5 @@ class Sector:
 		self.codigo codigo
 		self.capacidad capacidad
 
-	def actualizarCapacidad():
+	def actualizarCapacidad(self):
 		self.capacidad=input("Ingrese la nueva capacidad")
