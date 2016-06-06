@@ -1,1 +1,11 @@
 [2016-06-01 18:16:15] START
+[2016-06-02 09:59:06] CREATE css/vistaController: 0
+[2016-06-02 09:59:29] CREATE vista.html: 0
+[2016-06-02 10:14:34] CREATE vista/index.html: 0
+[2016-06-02 10:14:51] DELETE Chuwal/views/vista.html: -3
+[2016-06-02 10:22:54] CREATE vistaController.py: 0
+[2016-06-02 11:15:15] DELETE Chuwal/controllers/vista.py: -2
+[2016-06-02 11:15:34] DELETE Chuwal/views/vista/vista.html: -129
+[2016-06-02 11:15:53] DELETE Chuwal/static/css/vistaController.css: -5
+[2016-06-02 11:16:37] CREATE controllerVista.py: 0
+[2016-06-02 11:17:42] CREATE controllerVistas/index.html: 0
