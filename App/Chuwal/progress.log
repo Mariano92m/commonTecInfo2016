@@ -9,3 +9,15 @@
 [2016-06-02 11:15:53] DELETE Chuwal/static/css/vistaController.css: -5
 [2016-06-02 11:16:37] CREATE controllerVista.py: 0
 [2016-06-02 11:17:42] CREATE controllerVistas/index.html: 0
+[2016-06-09 18:03:05] CREATE chuMap.py: 0
+[2016-06-09 18:04:30] EDIT Chuwal/models/chuMap.py: 19
+[2016-06-09 18:05:28] EDIT Chuwal/models/chuMap.py: 0
+[2016-06-09 18:06:25] CREATE chuMap.py: 0
+[2016-06-09 18:06:52] EDIT Chuwal/controllers/chuMap.py: 18
+[2016-06-09 18:08:01] DELETE Chuwal/models/chuMap.py: -19
+[2016-06-09 18:08:41] CREATE chuMap/index.html: 0
+[2016-06-09 18:10:40] EDIT Chuwal/views/chuMap/index.html: 18
+[2016-06-09 18:11:23] EDIT Chuwal/views/chuMap/index.html: 0
+[2016-06-09 18:13:03] EDIT Chuwal/views/chuMap/index.html: 0
+[2016-06-09 18:14:25] EDIT Chuwal/controllers/chuMap.py: 0
+[2016-06-09 18:16:48] EDIT Chuwal/models/db.py: 7
