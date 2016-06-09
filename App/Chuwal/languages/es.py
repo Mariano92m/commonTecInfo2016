@@ -71,6 +71,7 @@
 'check all': 'marcar todos',
 'Check to delete': 'Marque para eliminar',
 'choose one': 'escoja uno',
+'Chuwal': 'Chuwal',
 'clean': 'limpiar',
 'Clear': 'Limpiar',
 'Clear CACHE?': '¿Limpiar CACHÉ?',
