@@ -15,7 +15,7 @@ $(document).ready(function(){
     streetViewControl: false,
   });
   
-  $.getJSON('{{=URL('controllers/chuMap.py','getMarkers')}}',
+  $.getJSON('{{=URL('chuMap','getMarkers')}}',
             function(data){
         map.addMarkers(data);
   });
