@@ -64,14 +64,14 @@
         display:block;
         background-color:transparent;
         color:white;
-        border: none;
+        border:none;
         outline:none;
     }
     </style>
 
   </head>
 
-  <body>
+  <body class="backgroundChu">
 
 <!-- Barra de navegacion -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -85,35 +85,35 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand">
-            <img src=../static/images/chuwalBlanco.png width="115" height="30">
+            <a href="{{=URL('controllerVistaHome','index')}}">
+              <img src=../static/images/chuwalBlanco.png width="115" height="30">
+            </a>
           </a>
         </div>
         
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
+         <ul class="nav navbar-nav navbar-right">
             <li><a href="#" style="color:#ffffff;"><big><b>Ranking</b></big></a></li>
             <li><a href="#" style="color:#ffffff;"><big><b>Logros</b></big></a></li>
             
-            <div class="btn">
-  
-              <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
-              <a type="button" class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
-                <big><b>SuchApp</b></big>
-                <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
-                <span class="caret"></span>
-              </a>
-              
-              <ul class="dropdown-menu" style="background-color:#F6E490;">
-                <li><a href="#">Perfil</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Cambiar Foto</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Ayuda</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Cerrar Sesión</a></li>
-                <li><img src=../static/images/bot.png width="20" height="15"></li>
-              </ul>
-            </div>
+
+            <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
+            <button class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
+              <big><b>WoWSuchApp</b></big>
+              <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
+              <span class="caret"></span>
+            </button>
+             
+            <ul class="dropdown-menu" style="background-color:#F6E490;">
+              <li><a href="{{=URL('chuPerfil','index')}}">Perfil</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Cambiar Foto</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Ayuda</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Cerrar Sesión</a></li>
+              <li><img src=../static/images/bot.png width="20" height="15"></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -122,13 +122,18 @@
 <!-- Logo Y Boton Jugar -->
     {{block Logo and Botton}}
     <div>
-
+      <div class="margT"></div>
       <center><img src="{{=URL('static','images/chuwalLogo.png')}}" width="50%" height="50%" class="btnAc"/></center>
       <center>
           <a href="{{=URL('chuMap','index')}}">
             <img src="{{=URL('static','images/botJugar.png')}}" width="19%" height="7%"/>
           </a>
-        <!-- <a href="#" id="btnPlay"></a> -->
+      </center>
+
+      <center>
+          <a href="{{=URL('chuNosotros','index')}}">
+            <img src="{{=URL('static','images/CommonTec.png')}}" width="15%" height="5%"/>
+          </a>
       </center>
     </div>
     {{end}}

@@ -71,9 +71,9 @@
 
   </head>
 
-  <body class="backgroundChu">
+  <body style="background-color:white;">
 
-  <!-- Barra de navegacion -->
+<!-- Barra de navegacion -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid" style="background-color:#B37E44;">
         <div class="navbar-header">
@@ -119,40 +119,35 @@
       </div>
     </nav>
 
-<!-- Map -->
-  <div class="margT"></div>
-  <center >
-    <div class="container"></div>
-    
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="{{=URL('static','js/gmaps.js')}}"></script>
-    <div id="map" style="height:500px; width:500px" width="50%" height="50%"></div>
-    <script>
-      $(document).ready(function(){
-        map = new GMaps({
-          div: '#map',
-          lat: -27.450906,
-          lng: -58.986579,
-          maxZoom:17,
-          minZoom:17,
-          streetViewControl: false,
-        });
-        
-        $.getJSON('{{=URL('chuMap','getMarkers')}}',
-                  function(data){
-              map.addMarkers(data);
-        });
 
-      });
-    </script>
-  
-  </center>
+<!-- Texto -->
+	<div style="color:black">
+	    <h1>
+		    <big><b>Nosotros</b></big>
+		</h1>
+		
+		<br>
+		
+		<h3>
+			<b> De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.</b>
+		</h3>
+
+		<h3>
+		    <b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
+		</h3>
+			<b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
+		</h3>
+	</div>
+
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
+	<button onclick="goBack()"><img src=../static/images/atras.png></button>
 
 <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   </body>
 
 </html>
-
-
-
