@@ -23,20 +23,6 @@
     background-position:center;
 }
 
-/*Prueba Responsive*/
-#map_canvas {
-   width: 100%;
-   height:400px;
-}
-.container {
-    margin-top: 30px;
-}
-
-/*Prueba Test*/
-.btn{
-	background: transparent; 
-}
-
 /*Acomoda el boton un 40%*/
 .margT{
 	/*Acomoda el boton*/
