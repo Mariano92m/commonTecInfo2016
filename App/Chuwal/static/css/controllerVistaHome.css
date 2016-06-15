@@ -22,13 +22,9 @@
     /*Centra el fondo*/
     background-position:center;
 }
-
-/*Acomoda el boton un 40%*/
-.margT{
-	/*Acomoda el boton*/
-	margin-top: 13%;
+.pT{
+    padding-top: 10%; 
 }
-
 /*Plantilla general para los botones*/
 .btnGen{
 	font-size: 15px;

@@ -56,7 +56,7 @@
     middle_column = {0: mc0, 1: mc1, 2: mc2}[
     (left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]
     }}
-    
+
     <style> [type="button"]
     {
         width:100%;
@@ -67,6 +67,18 @@
         border:none;
         outline:none;
     }
+    </style>
+    
+    <style>
+      /* Phone */
+      @media (min-width: @screen-xs-min) {
+        .pT=padding-top: 15%;
+      }
+
+      /* Desktops */
+      @media (min-width: @screen-md-min) {
+        .pT=padding-top: 100%;
+      }
     </style>
 
   </head>
