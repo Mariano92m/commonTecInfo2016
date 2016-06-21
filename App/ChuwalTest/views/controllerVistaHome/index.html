@@ -1,0 +1,22 @@
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+  <!-- Logo Y Boton Jugar -->
+
+<div class="row pT">  
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+    <center><img src="{{=URL('static','images/chuwalLogo.png')}}" width="50%" height="50%" class="btnAc"/></center>
+     <center>
+      <a href="{{=URL('chuMap','index')}}">
+        <img src="{{=URL('static','images/botJugar.png')}}" width="19%" height="7%"/>
+      </a>
+    </center>
+
+    <center>
+      <a href="{{=URL('chuNosotros','index')}}">
+        <img src="{{=URL('static','images/CommonTec.png')}}" width="15%" height="5%"/>
+      </a>
+    </center>
+  </div>
+</div>
+{{end}}
