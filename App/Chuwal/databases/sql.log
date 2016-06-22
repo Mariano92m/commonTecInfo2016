@@ -63,3 +63,244 @@ CREATE TABLE place(
     cazada TEXT
 );
 success!
+<<<<<<< HEAD
+=======
+timestamp: 2016-06-21T10:06:15.014000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImage CHAR(512),
+    awards TEXT
+);
+success!
+timestamp: 2016-06-21T10:06:15.239000
+ALTER TABLE place ADD sculpture_id INTEGER REFERENCES sculpture (id) ON DELETE CASCADE  ;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2016-06-22T10:05:31.959000
+ALTER TABLE sculpture ADD fileimagenohunt CHAR(512);
+timestamp: 2016-06-22T10:05:43.343000
+ALTER TABLE sculpture ADD fileimagenohunt CHAR(512);
+timestamp: 2016-06-22T10:09:14.232000
+ALTER TABLE sculpture ADD fileimagenohunturl TEXT;
+timestamp: 2016-06-22T10:10:08.374000
+ALTER TABLE sculpture ADD fileimageurl TEXT;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2016-06-22T10:12:02.193000
+ALTER TABLE sculpture ADD fileimageurl TEXT;
+timestamp: 2016-06-22T10:12:13.836000
+ALTER TABLE sculpture ADD fileimageurl TEXT;
+timestamp: 2016-06-22T10:12:48.771000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+success!
+success!
+success!
+success!
+success!
+success!
+>>>>>>> af99486b5099ade436fa523849f31361b4039d77
