@@ -131,6 +131,8 @@ auth.settings.reset_password_requires_verification = True
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 
+<<<<<<< HEAD
+=======
 """//////"""
 #db.define_table('image',
 #    Field('title'),
@@ -162,15 +164,11 @@ db.define_table('sculpture',
                 Field('awards','text'))
 
 #Base de datos de las coordenadas
+>>>>>>> af99486b5099ade436fa523849f31361b4039d77
 db.define_table('place',
                 Field('name', 'text', requires=IS_NOT_EMPTY()),
+                Field('descr', 'text'),
                 Field('lat', 'text'),
                 Field('lng', 'text'),
-                Field('sculpture_id', db.sculpture),
                 Field('cazada','text'),
                 migrate='place.table')
-
-db.place.sculpture_id_requires = IS_IN_DB(db, db.sculpture.id, '%(title)s')
-db.place.lat.requires = IS_NOT_EMPTY()
-db.place.lng.requires = IS_NOT_EMPTY()
-db.place.sculpture_id.writable = db.place.sculpture_id.readable=False

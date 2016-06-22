@@ -157,9 +157,9 @@ db.define_table('sculpture',
                 Field('material','text'),
                 Field('address','text'),
                 Field('yearCreate','text'),
-                Field('fileImage', 'upload'),
-                Field('awards','text'),
-                migrate='sculpture.table')
+                Field('fileImageURL', 'text'),
+                Field('fileImageNHURL', 'text'),
+                Field('awards','text'))
 
 #Base de datos de las coordenadas
 db.define_table('place',

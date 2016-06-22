@@ -63,6 +63,8 @@ CREATE TABLE place(
     cazada TEXT
 );
 success!
+<<<<<<< HEAD
+=======
 timestamp: 2016-06-21T10:06:15.014000
 CREATE TABLE sculpture(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -301,6 +303,7 @@ success!
 success!
 success!
 success!
+<<<<<<< HEAD
 success!
 success!
 success!
@@ -328,3 +331,6 @@ success!
 success!
 success!
 success!
+=======
+>>>>>>> af99486b5099ade436fa523849f31361b4039d77
+>>>>>>> 8a7741ca7f25e2556fccaa9965dfc23807055f11
