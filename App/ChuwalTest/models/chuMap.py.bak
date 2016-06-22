@@ -1,7 +1,7 @@
- -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from gluon.serializers import loads_json
 
-#Controlador para el mapa
+
 def getMarkers():
     places = []
     rows = db(db.place.id >0 ).select()

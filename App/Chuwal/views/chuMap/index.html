@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{#extend 'layout.html'}}
 <!DOCTYPE html>
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
@@ -53,6 +54,18 @@
     <div id="map" style="height:500px;width:500px"></div>
     <script>
 
+=======
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+<center>
+  <div class="container"></div>
+    
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="{{=URL('static','js/gmaps.js')}}"></script>
+  <div id="map" style="height:500px; width:500px" width="50%" height="50%"></div>
+  <script>
+>>>>>>> 6293895e6254d1fd01e6fec33b71866c12b1d7dd
     $(document).ready(function(){
       map = new GMaps({
         div: '#map',
@@ -62,6 +75,7 @@
         minZoom:17,
         streetViewControl: false,
       });
+<<<<<<< HEAD
       
       $.getJSON('{{=URL('chuMap','getMarkers')}}',
                 function(data){
@@ -72,3 +86,15 @@
   </body>
   {{pass}}
 </html>
+=======
+        
+      $.getJSON('{{=URL('chuMap','getMarkers')}}', function(data){
+        map.addMarkers(data);
+      });
+
+    });
+  </script>
+    
+</center>
+{{end}}
+>>>>>>> 6293895e6254d1fd01e6fec33b71866c12b1d7dd
