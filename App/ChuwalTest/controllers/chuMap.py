@@ -43,8 +43,10 @@ def getMarkers():
             imagen= "{{=URL('download', args=row.sculpture_id.fileImage)}}"
         except:
             imagen ="http://cdn.quotesgram.com/small/44/82/67139225-46070194.jpg"
+            imagen = "\Chuwal\static\images\Esculturas\16.jpg"
+            imagen = row.fileImageUrl
         
-        html = '<p>' '<img src='+imagen+' width="200px" />' '</p>'
+        html = '<p>' '<img src=' + imagen + ' width="200px" />' '</p>'
         place = {
             'lat' : row.lat,
             'lng' : row.lng,

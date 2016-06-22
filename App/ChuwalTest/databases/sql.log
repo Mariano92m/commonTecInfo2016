@@ -249,3 +249,110 @@ success!
 success!
 success!
 success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2016-06-22T10:18:55.039000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+timestamp: 2016-06-22T10:19:26.829000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+timestamp: 2016-06-22T10:19:40.812000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+timestamp: 2016-06-22T10:20:47.455000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2016-06-22T10:23:36.190000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+timestamp: 2016-06-22T10:24:39.976000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+timestamp: 2016-06-22T10:25:07.210000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
