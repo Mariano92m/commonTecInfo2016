@@ -31,6 +31,15 @@ def setMarkerColor(cazada):
     else:
         return "\Chuwal\static\images\PinRojo.png"
 
+def showIMG(condition, img, imgNH):
+    if(condition=='S'):
+        imagen= '"' + img + '"'
+    elif(condition=='N' and imgNH != "none"):
+        imagen= '"' + imgNH + '"'
+    else:
+        imagen ="http://cdn.quotesgram.com/small/44/82/67139225-46070194.jpg"
+    return imagen
+
 #Controlador para el mapa
 def getMarkers():
     places = []
@@ -39,13 +48,8 @@ def getMarkers():
     for row in rows:
         x=setMarkerColor(row.cazada)
 
-        try:
-            imagen= "{{=URL('download', args=row.sculpture_id.fileImage)}}"
-        except:
-            imagen ="http://cdn.quotesgram.com/small/44/82/67139225-46070194.jpg"
-            imagen = "\Chuwal\static\images\Esculturas\16.jpg"
-            imagen = row.fileImageUrl
-        
+        imagen= showIMG(row.cazada, row.sculpture_id.fileImageURL, row.sculpture_id.fileImageNHURL)
+                   
         html = '<p>' '<img src=' + imagen + ' width="200px" />' '</p>'
         place = {
             'lat' : row.lat,
