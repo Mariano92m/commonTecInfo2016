@@ -21,14 +21,15 @@ def call():
     """
     return service()
 
-def getUrlImagen(id):
-    file_id = 1
-    import cStringIO 
-    import contenttype as c
-    s=cStringIO.StringIO() 
-    (filename,file) = db.sculpture.fileImage.retrieve(db.sculpture[file_id].fileImage)
-    return s.write(file.read()) 
-    
+def somefunction():
+    pic = db(db.sculpture).select().first().picture   #select first picture
+    return dict(pic=pic)
+
+def setMarkerColor(cazada):
+    if(cazada=='S'):
+        return "\Chuwal\static\images\PinVerde.png"
+    else:
+        return "\Chuwal\static\images\PinRojo.png"
 
 #Controlador para el mapa
 def getMarkers():
@@ -36,17 +37,14 @@ def getMarkers():
     rows = db(db.place.id >0 ).select()
 
     for row in rows:
-        if(row.cazada=='S'):
-            x="\Chuwal\static\images\PinVerde.png"
-        else:
-            x="\Chuwal\static\images\PinRojo.png"
-        
+        x=setMarkerColor(row.cazada)
+
         try:
-            imagen= getUrlImagen(1)
+            imagen= "{{=URL('download', args=row.sculpture_id.fileImage)}}"
         except:
-            imagen ="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Run.svg/744px-Run.svg.png "
+            imagen ="http://cdn.quotesgram.com/small/44/82/67139225-46070194.jpg"
         
-        html = '<img src="'+ imagen +'">'
+        html = '<p>' '<img src='+imagen+' width="200px" />' '</p>'
         place = {
             'lat' : row.lat,
             'lng' : row.lng,

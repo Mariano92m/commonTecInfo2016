@@ -131,10 +131,46 @@ auth.settings.reset_password_requires_verification = True
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 
+"""//////"""
+#db.define_table('image',
+#    Field('title'),
+#    Field('file', 'upload'))
+
+#db.define_table('comment',
+#    Field('image_id', db.image),
+#    Field('author'),
+#    Field('email'),
+#    Field('body', 'text'))
+
+#db.image.title.requires = IS_NOT_IN_DB(db, db.image.title)
+#db.comment.image_id_requires = IS_IN_DB(db, db.image.id, '%(title)s')
+#db.comment.author.requires = IS_NOT_EMPTY()
+#db.comment.email.requires = IS_EMAIL()
+#db.comment.body.requires=IS_NOT_EMPTY()
+#db.comment.image_id.writable = db.comment.image_id.readable=False
+
+#Base de datos de las esculturas
+db.define_table('sculpture',
+                Field('title'),
+                Field('author','text'),
+                Field('country','text'),
+                Field('material','text'),
+                Field('address','text'),
+                Field('yearCreate','text'),
+                Field('fileImageURL', 'text'),
+                Field('fileImageNHURL', 'text'),
+                Field('awards','text'))
+
+#Base de datos de las coordenadas
 db.define_table('place',
                 Field('name', 'text', requires=IS_NOT_EMPTY()),
-                Field('descr', 'text'),
                 Field('lat', 'text'),
                 Field('lng', 'text'),
+                Field('sculpture_id', db.sculpture),
                 Field('cazada','text'),
                 migrate='place.table')
+
+db.place.sculpture_id_requires = IS_IN_DB(db, db.sculpture.id, '%(title)s')
+db.place.lat.requires = IS_NOT_EMPTY()
+db.place.lng.requires = IS_NOT_EMPTY()
+db.place.sculpture_id.writable = db.place.sculpture_id.readable=False
