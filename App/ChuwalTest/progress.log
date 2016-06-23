@@ -16,3 +16,14 @@
 [2016-06-09 23:36:23] CREATE chuNosotros.py: 0
 [2016-06-09 23:36:55] CREATE chuNosotros/index.html: 0
 [2016-06-11 19:42:07] CREATE chuTemplate.html: 0
+[2016-06-22 11:14:25] CREATE chuInfoEscul.py: 0
+[2016-06-22 11:15:06] CREATE chuInfoEscul/index.html: 0
+[2016-06-22 11:15:43] EDIT Chuwal/views/chuInfoEscul/index.html: 50
+[2016-06-22 11:16:30] EDIT Chuwal/views/chuInfoEscul/index.html: 0
+[2016-06-22 11:20:10] EDIT Chuwal/controllers/chuInfoEscul.py: 1
+[2016-06-22 11:24:38] EDIT Chuwal/views/chuInfoEscul/index.html: 5
+[2016-06-22 11:28:00] EDIT Chuwal/views/chuInfoEscul/index.html: 43
+[2016-06-22 11:29:05] EDIT Chuwal/views/chuInfoEscul/index.html: -10
+[2016-06-23 13:17:17] CREATE chuInfoEscul.css: 0
+[2016-06-23 13:17:41] DELETE Chuwal/static/chuInfoEscul.css: 0
+[2016-06-23 13:18:09] CREATE css/chuInfoEscul.css: 0
