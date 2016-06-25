@@ -27,3 +27,16 @@
 [2016-06-23 13:17:17] CREATE chuInfoEscul.css: 0
 [2016-06-23 13:17:41] DELETE Chuwal/static/chuInfoEscul.css: 0
 [2016-06-23 13:18:09] CREATE css/chuInfoEscul.css: 0
+[2016-06-24 20:37:56] CREATE chuLista/index.html: 0
+[2016-06-24 20:39:05] CREATE css/chuLista.css: 0
+[2016-06-24 20:47:19] DELETE ChuwalTest/views/chuLista/index.html: -3
+[2016-06-24 20:47:42] DELETE ChuwalTest/static/css/chuLista.css: 0
+[2016-06-24 20:49:37] CREATE chuLista/index.html/index.html.bak: 0
+[2016-06-24 20:50:26] CREATE css/chuLista.css: 0
+[2016-06-24 21:22:22] CREATE chuLista.html: 0
+[2016-06-24 21:25:11] EDIT ChuwalTest/views/chuLista.html: 0
+[2016-06-24 21:33:26] DELETE ChuwalTest/views/chuLista.html: -3
+[2016-06-24 21:34:22] CREATE chuLista/index.html: 0
+[2016-06-24 21:36:18] EDIT ChuwalTest/views/chuLista/index.html: 0
+[2016-06-24 22:29:03] CREATE chuLista.py: 0
+[2016-06-24 22:29:53] EDIT ChuwalTest/controllers/chuLista.py: 1
