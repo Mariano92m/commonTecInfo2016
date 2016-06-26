@@ -53,7 +53,7 @@
       </script>
 
       <button class="btn btn-default" style="border-radius: 10px; background-color:#F6E490;">
-        <a href="{{=URL('chuList','index')}}">Esculturas</a>
+        <a href="{{=URL('chuInfoEscul','index')}}">Esculturas</a>
       </button>  
     </center>
   </div>

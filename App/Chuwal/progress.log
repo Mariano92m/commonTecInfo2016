@@ -29,3 +29,10 @@
 [2016-06-23 13:18:09] CREATE css/chuInfoEscul.css: 0
 [2016-06-26 14:28:20] CREATE chuList.py: 0
 [2016-06-26 14:28:42] CREATE chuList/index.html: 0
+[2016-06-26 20:21:55] EDIT Chuwal/controllers/chuList.py: 1
+[2016-06-26 20:25:29] EDIT Chuwal/views/chuList/index.html: 46
+[2016-06-26 20:27:40] EDIT Chuwal/views/chuList/index.html: -15
+[2016-06-26 20:28:38] EDIT Chuwal/views/chuList/index.html: 0
+[2016-06-26 20:32:42] EDIT Chuwal/views/chuMap/index.html: 0
+[2016-06-26 20:35:33] EDIT Chuwal/views/chuList/index.html: 10
+[2016-06-26 20:46:13] EDIT Chuwal/views/chuList/index.html: 0
