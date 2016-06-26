@@ -24,3 +24,6 @@
 [2016-06-22 11:24:38] EDIT Chuwal/views/chuInfoEscul/index.html: 5
 [2016-06-22 11:28:00] EDIT Chuwal/views/chuInfoEscul/index.html: 43
 [2016-06-22 11:29:05] EDIT Chuwal/views/chuInfoEscul/index.html: -10
+[2016-06-23 13:17:17] CREATE chuInfoEscul.css: 0
+[2016-06-23 13:17:41] DELETE Chuwal/static/chuInfoEscul.css: 0
+[2016-06-23 13:18:09] CREATE css/chuInfoEscul.css: 0
