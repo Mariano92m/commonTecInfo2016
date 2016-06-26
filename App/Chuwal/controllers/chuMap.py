@@ -73,7 +73,7 @@ def getMarkers():
         html =  (
                 '<div class="container" style="width: 200px;">'
                     '<center>''<img src=' + imagen + ' style="width: 100%;"/>''</center>'
-                    '<center>''<button>'+ but +'</button>''</center>'
+                    '<center>''<button id="but1">'+ but +'</button>''</center>'
                 '</div>'
                 ) 
         

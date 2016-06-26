@@ -6,32 +6,55 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="{{=URL('static','css/chuInfoEscul.css')}}"/>
 </head>
+<style>
+  img .img-responsive{
+      border-style: solid;
+      border-width: 5px;
+      border-color:#B37E44;
+  }
+</style>
 
-<div class=conteiner-fluid>
-  <div class="row">
+<div class="row">  
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+    <center class="container one" style="border-radius: 10px; background-color:#F6E490; width:100%;">
       <div class="thumbnail">
-        <div class="">
-          <div class="row">
-            <div class="col-xs-6 col-md-6">
-              <div class="one-third mobile-collapse">
-                <img  src="../static/images/esculturas/21.jpg" class="img-responsive" alt="Imagen responsive">
-              </div>
+        <div class="row">
+          
+          <div class="col-xs-6 col-md-6">
+            <div class="one-third mobile-collapse">
+              <img  src="../static/images/esculturas/21.jpg" class="img-responsive" width="304" height="236">
             </div>
+          </div>
+          
+          <div class="col-xs-6 col-md-6">
             
-            <div class="col-xs-6 col-md-6">
-              <h4 class=text-left><b>The Girl</b></h4>
-              <h6>
-                <li class=text-left><p><b>A al vuelta de mi casa</b></p></li>
-                <li class=text-left><p><b>23 de junio,1998</b></p></li>
-                <li class=text-left><p><b>Autor: Cosme Fulanito</b></p></li>
-                <li class=text-left><p><b>Material: Plastilina</b></p></li>
-                <li class=text-left><p><b>Origen: China</b></p></li>
-              </h6>
-              <button><a href="{{=URL('chuMap','index')}}" class="btn">Ver en Mapa</a></button>
-            </div>
+            <!--Titulo        db.sculputre.title-->
+            <h4 class=text-left><b>The Girl</b></h4>
+            <h6>
+
+              <!--Autor       db.sculputre.author-->
+              <li class=text-left><p><b>Autor: Cosme Fulanito</b></p></li>
+              
+              <!--Pais        db.sculputre.title-->
+              <li class=text-left><p><b>Origen: China</b></p></li>
+                
+              <!--Material    db.sculputre.material-->
+              <li class=text-left><p><b>Material: Plastilina</b></p></li>
+              
+              <!--Direccion   db.sculputre.address-->
+              <li class=text-left><p><b>A al vuelta de mi casa</b></p></li>
+              
+              <!--Año creada  db.sculputre.yearCreate-->
+              <li class=text-left><p><b>23 de junio,1998</b></p></li>
+
+              <!--Premio      db.sculputre.awards-->
+              <li class=text-left><p><b>none</b></p></li>
+            </h6>
+            <button><a href="{{=URL('chuMap','index')}}" class="btn">Ver en Mapa</a></button>
           </div>
         </div>        
       </div>
+    </center>
   </div>
 </div>
 {{end}}

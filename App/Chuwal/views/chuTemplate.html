@@ -71,14 +71,14 @@
     </style>
     
     <style>
-      /* Phone */
-      @media (min-width: @screen-xs-min) {
-        .pT=padding-top: 15%;
+      /* iPhone 4 ----------- */
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+        {{block mediaCell}}
+        {{end}}
       }
 
-      /* Desktops */
-      @media (min-width: @screen-md-min) {
-        .pT=padding-top: 100%;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      /* Styles */
       }
     </style>
 
@@ -87,7 +87,7 @@
   <body class="backgroundChu">
 
 	<!-- Barra de navegacion -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid" style="background-color:#B37E44;">
         <div class="navbar-header">
           <button class="navbar-toggle" data-toggle="collapse"

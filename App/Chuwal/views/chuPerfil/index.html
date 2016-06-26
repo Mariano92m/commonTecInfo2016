@@ -2,19 +2,67 @@
 
 {{block body}}
 
-<div class="row pT">  
+
+<style>
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+}
+
+.button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.button2 {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.img{
+  position: absolute;
+  top:80px
+  left:50px;
+}
+</style>
+
+
+
+<div class="row">  
+  <div class="p">
   <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
-    <div class="thumbnail">
+   <div class=conteiner-fluid>
+    <div class="row">
+      <div class="thumbnail">
       <img src="../static/images/user.jpg" class=img-circle width=140 height=140>
         
       <div class="caption">
+
+      <center>
+      <button class="button" width=20 height=52>cambiar foto</button>
+      </center>
           
-        <h2><p class=text-center><big><b>WoWSuchApp</b></big></p></h2>
+        <h1><font color="#774111"><p class=text-center><big><b>WoWSuchApp</b></big></p></font></h1>
           
-        <p><h5>Level12</h5></p>
+        <p><font color="#774111"><h5>Nivel 12</h5></font></p>
             
         <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
             <span class="sr-only">60% completado</span>
           </div>
         </div>
@@ -23,9 +71,10 @@
       <div>
       	<p class= text-right>400/1000</p>
       </div>
-                  
-      <br>
-        
+
+  
+      </br>  
+
       <div class="row">
         <div class="col-xs-6 col-md-6">
           <p class=text-left><b>Esculturas Cazadas</b></p>
@@ -41,13 +90,30 @@
       <div class="row">
         <div class="col-xs-6 col-md-6">
           <p class=text-left><b>Logros Conseguidos</b></p>
+
+     
+
         </div>
-                      
+
+
         <div class="col-xs-6 col-md-6">
           <p class=text-right><b>4</b></p>
-        </div>         	
-     	</div>    
+
+          </br>  
+
+      </div> 
+      <center>
+
+      <img src="../static/images/atras.png"  height="50" weight="50">
+      </div>
+      </center>
+
+     	</div>
+    
+      
+    
     </div>
+  </div>
   </div>
 </div>
 

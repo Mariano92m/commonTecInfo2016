@@ -1,27 +1,72 @@
 {{extend 'chuTemplate.html'}}
 
 {{block body}}
-<div style="color:black">
-	<h1>
-    	<big><b>Nosotros</b></big>
-	</h1>
-			
-	<br>
-			
-	<h3>
-		<b> De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.</b>
-	</h3>
 
-	<h3>
-    <b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
-	</h3>
-		<b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
-	</h3>
-</div>
-<script>
-	function goBack() {
-	    window.history.back();
-	}
-</script>
-<button onclick="goBack()"><img src=../static/images/atras.png></button>
+
+
+
+<style>
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+  font-size: 14;
+}
+</style>
+
+
+<div class="row">  
+  <div class="p">
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+   <div class=conteiner-fluid>
+    <div class="row">
+      <div class="thumbnail">
+      <img src="../static/images/frascoSolo.png"  width=50 height=50>
+        
+      <div class="caption">
+
+    
+        <h1>
+        <font color="#774111">
+        <p class=text-center><big>
+        <b>Nosotros</b>
+        </p>
+        </big>
+        </font>
+        </h1>
+        
+          
+        
+        <font color="#774111">
+			<p>
+        	De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.
+        	
+        	
+        	
+
+        	</br>
+
+        	Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.
+
+        	</br>
+
+
+
+       
+		</p>
+		</font>
+     </div>
+     <center>
+      <img src="../static/images/atras.png"  height="50" weight="50">
+      </div>
+      </center>
+
+     	</div>
+    </div>
+   </div>
+
+
 {{end}}
