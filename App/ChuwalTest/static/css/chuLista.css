@@ -3,36 +3,36 @@ body {
 }
 #section1 {
 	padding-top:5px;
-	height:235px;
+	height:150px;
 	color: #fff;
-	background-color: #FFFE9F;
+	background-color: #F6E490;
 }
 #section2 {
 	padding-top:5px;
-	height:235px;
+	height:150px;
 	color: #fff;
-	background-color: #F6E490;
+	background-color: #FFFE9F;
 }
 #section3 {
 	padding-top:5px;
-	height:235px;
-	color: #fff;
-	background-color: #FFFE9F;
-}
-#section4 {
-	padding-top:5px
-	;height:235px;
+	height:150px;
 	color: #fff;
 	background-color: #F6E490;
 }
-#section5 {
+#section4 {
 	padding-top:5px
-	;height:235px;
+	;height:150px;
 	color: #fff;
 	background-color: #FFFE9F;
 }
+#section5 {
+	padding-top:5px;
+	height:150px;
+	color: #fff;
+	background-color: #F6E490;
+}
 .ride{
-	background-color:#FFFE9F;
+	background-color:#F6E490;
 	border-color:transparent;
 }
 .text-left{
@@ -54,14 +54,15 @@ h5{
 	padding-top: 0px;
 }
 .larger{
-	padding-top:50px;
-	padding-right:0px;
+	padding-top:40px;
+	padding-right:20px;
 	padding-left:0px;
 	color:green;
 }
 .caja{
-	padding-right:30px;
-	padding-left:30px;
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom:50px;
 	background-color:#F6E490;
 	border-color:transparent;
 }
@@ -74,12 +75,18 @@ h5{
 	font-style:italic;
 	background-color:#E89B39;
 	color:white;
-
+}
+.ja{
+    position:absolute;
+    bottom:20px;
+    right:800px;
 }
 button.jugar.btn{
 	background-color:#E89B39;
 	
-	position:absolute; left:125px;top:60px;
+	position:absolute; left:100px;
+	top:60px;
+	right:0px;
 }
 button.jugar.btn:hover, .btn:focus{
 	background-color:#F38A06;
@@ -91,27 +98,99 @@ button.jugar.btn:hover, .btn:focus{
 }
 .contenedor{
 	padding-top: 90px;
-	padding-right:28px;
-	padding-left:28px;
+	padding-right:150px;
+	padding-left:150px;
+
+}
+button.mapa.btn{
+	background-color:#B37E44;
+	position:absolute;
+    bottom:30px;
+    right:175px;
+}
+button.mapa.btn:hover,.btn:focus{
+	background-color:#B37E44;
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+	button.jugar.btn{
+
+		position:absolute; left:80px;top:60px;
+	}
+	.contenedor{
+		padding-top: 90px;
+		padding-right:100px;
+		padding-left:100px;
+	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:700px;
+	}
 
 }
 
-@media (min-width: 750px) and (max-width: 1000px){
+@media (min-width: 800px) and (max-width: 899px){
 	button.jugar.btn{
 
-		position:absolute; left:100px;top:60px;
+		position:absolute; left:80px;top:60px;
 	}
-}	  	
-@media (min-width: 635px) and (max-width: 749px){
-	button.jugar.btn{
-		position:absolute; left:70px;top:60px;
+	.contenedor{
+		padding-top: 90px;
+		padding-right:100px;
+		padding-left:100px;
 	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:600px;
+	}
+
 }
-
-@media (min-width: 560px) and (max-width: 635px){
-	 .img-responsive{
-	  	padding-top:30px;
+@media (min-width: 733px) and (max-width: 799px){
+	button.jugar.btn{
+		position:absolute; left:50px;top:60px;
+	}
+	.contenedor{
+		padding-top: 80px;
+		padding-right:90px;
+		padding-left:90px;
+	}
+	.img-responsive{
+	  	padding-bottom:30px;
 	  	padding-left:5px;
+	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:480px;
+	}
+}
+@media (min-width: 673px) and (max-width: 732px){
+	button.jugar.btn{
+		position:absolute; left:50px;top:60px;
+	}
+	.contenedor{
+		padding-top: 80px;
+		padding-right:90px;
+		padding-left:90px;
+	}
+	.img-responsive{
+	  	padding-bottom:30px;
+	  	padding-left:5px;
+	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:440px;
+	}
+
+}
+@media (min-width: 565px) and (max-width: 672px){
+	.img-responsive{
+	  	padding-top:30px;
+	  	padding-left:10px;
+	  	padding-bottom:30px;
 	}
 	.larger,.jugar{
 	  	font-size: 18px;
@@ -124,23 +203,38 @@ button.jugar.btn:hover, .btn:focus{
 	  	padding-top:0px;
 	}
 	.caja{
-	padding-right:10px;
-	padding-left:10px;
+		padding-right:10px;
+		padding-left:10px;
 	}
 	
 	button.jugar.btn{
-		position:absolute; left:40px;top:60px;
+		position:absolute; left:20px;top:60px;
 	}
-	  		
-	  		
+	
+	.contenedor{
+		padding-top: 80px;
+		padding-right:80px;
+		padding-left:80px;
+	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:370px;
+	}
+	button.mapa.btn{
+		background-color:#B37E44;
+		position:absolute;
+	    bottom:30px;
+	    right:120px;
+	}
 }
-@media (min-width: 325px) and (max-width: 559px){
+@media (min-width: 504px) and (max-width: 564px){
 	.img-responsive{
-	  	padding-top:50px;
-	  	padding-left:50px;
+	  	padding-top:40px;
+	  	padding-bottom:30px;
 	}
 	.larger,.jugar{
-	  	font-size: 14px;
+	  	font-size:9px;
 	}
 	.text-left{
 		font-size:14px;
@@ -151,18 +245,93 @@ button.jugar.btn:hover, .btn:focus{
 	  	padding-top:0px;
 	}
 	.caja{
-	padding-right:10px;
-	padding-left:10px;
+		padding-right:10px;
+		padding-left:10px;
 	}
 	.titulo{
 		font-size:30px;
 	}
-	button.jugar.btn{
-		position:absolute; left:10px;top:60px;
+	button.mapa.btn{
+		background-color:#B37E44;
+		position:absolute;
+	    bottom:30px;
+	    right:80px;
 	}
 
+	.contenedor{
+		padding-top: 80px;
+		padding-right:60px;
+		padding-left:60px;
+	}
+	#section1,#section2,#section3,#section4,#section5 {
+	padding-top:5px;
+	height:150px;
+	width:100%;
+	}
+	
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:340px;
+	}
+	button.jugar.btn{
+
+		position:absolute; left:10px;top:60px;
+	}
 }
-@media (min-width: 200px) and (max-width: 324px){
+@media (min-width: 371px) and (max-width: 503px){
+	.img-responsive{
+	  	padding-top:40px;
+	  	padding-bottom:30px;
+	}
+	.larger,.jugar{
+	  	font-size:9px;
+	}
+	.text-left{
+		font-size:14px;
+	}
+	
+	.red{
+	  	font-size: 14px;
+	  	padding-top:0px;
+	}
+	.caja{
+		padding-right:10px;
+		padding-left:10px;
+	}
+	.titulo{
+		font-size:30px;
+	}
+	button.mapa.btn{
+		background-color:#B37E44;
+		position:absolute;
+	    bottom:30px;
+	    right:80px;
+
+	}
+
+	.contenedor{
+		padding-top: 60px;
+		padding-right:30px;
+		padding-left:30px;
+	}
+	#section1,#section2,#section3,#section4,#section5 {
+		padding-top:5px;
+		height:150px;
+		width:100%;
+	}
+	
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:250px;
+	}
+	button.jugar.btn{
+
+		position:absolute; left:0px;top:60px;
+	}
+}
+@media (min-width: 200px) and (max-width: 370px){
 	.img-responsive{
 	  	padding-top:50px;
 	  	padding-left:7px;
@@ -178,8 +347,8 @@ button.jugar.btn:hover, .btn:focus{
 		font-size:11px;
 	}
 	.caja{
-	padding-right:10px;
-	padding-left:10px;
+		padding-right:1px;
+		padding-left:1px;
 	}
 	button.jugar.btn{
 		position:absolute; left:0px;top:60px;
@@ -187,6 +356,27 @@ button.jugar.btn:hover, .btn:focus{
 	.titulo{
 		font-size:28px;
 	}
+	.ja{
+	    position:absolute;
+	    bottom:20px;
+	    right:210px;
+	}
+	button.mapa.btn{
+		background-color:#B37E44;
+		position:absolute;
+	    bottom:30px;
+	    right:60px;
 
-	  		
+	}
+	#section1,#section2,#section3,#section4,#section5 {
+		padding-top:5px;
+		height:150px;
+		width:100%;
+	}
+	.contenedor{
+		padding-top: 60px;
+		padding-right:20px;
+		padding-left:20px;
+	}
+		  		
 }

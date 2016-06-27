@@ -1,27 +1,88 @@
 {{extend 'chuTemplate.html'}}
 
 {{block body}}
-<div style="color:black">
-	<h1>
-    	<big><b>Nosotros</b></big>
-	</h1>
-			
-	<br>
-			
-	<h3>
-		<b> De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.</b>
-	</h3>
 
-	<h3>
-    <b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
-	</h3>
-		<b> Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.</b>
-	</h3>
-</div>
-<script>
-	function goBack() {
-	    window.history.back();
-	}
-</script>
-<button onclick="goBack()"><img src=../static/images/atras.png></button>
+
+
+
+<style>
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+  font-size: 14; 
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+}
+
+.conteiner-fluid{
+	padding: 40px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+}
+
+</style>
+
+<div class="row pT">  
+  <div class="p">
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+   <div class=conteiner-fluid>
+    <div class="row">
+      <div class="thumbnail">
+      <img src="../static/images/frascoSolo.png"  width=50 height=50 style="padding-top:10px">
+        
+      <div class="caption">
+
+    
+        <h3>
+        <font color="#774111">
+        <center>
+        <h2><b>Nosotros</b></h2>
+        </center>
+        </font>
+        </h3>
+        
+          
+        
+        <font color="#774111">
+			<p class="ppad">
+        	<h6>De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.
+        	
+        	
+        	
+
+        	</br>
+
+        	Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.
+
+        	</br></h6>
+
+
+
+       
+		</p>
+		</font>
+     </div>
+   
+
+     	</div>
+     	  <center>
+     <a href="{{=URL('controllerVistaHome','index')}}">
+      <img src="{{=URL('static','images/atras.png')}}"  height="60px" widht="60px"/>
+      </a>
+      </div>
+      </center>
+    </div>
+   </div>
+
+
 {{end}}
