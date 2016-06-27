@@ -1953,3 +1953,169 @@ success!
 success!
 success!
 success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2016-06-27T11:11:35.278000
+CREATE TABLE sculpture(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title CHAR(512),
+    author TEXT,
+    country TEXT,
+    material TEXT,
+    address TEXT,
+    yearCreate TEXT,
+    fileImageURL TEXT,
+    fileImageNHURL TEXT,
+    awards TEXT
+);
+success!
+timestamp: 2016-06-27T11:11:35.332000
+CREATE TABLE place(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    lat TEXT,
+    lng TEXT,
+    sculpture_id INTEGER REFERENCES sculpture (id) ON DELETE CASCADE  ,
+    cazada TEXT
+);
+success!
