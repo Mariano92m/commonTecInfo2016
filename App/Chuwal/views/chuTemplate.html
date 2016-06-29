@@ -68,6 +68,17 @@
         border:none;
         outline:none;
     }
+
+    .logo{
+
+      margin: 10px 0;
+    }
+
+      .logo2{
+        
+        margin: 5px 0;
+    }
+
     </style>
     
     <style>
@@ -99,8 +110,8 @@
           </button>
           <a class="navbar-brand">
             <a href="{{=URL('controllerVistaHome','index')}}">
-              <img src=../static/images/chuwalBlanco.png width="115" height="30">
-            </a>
+              <img class="logo" src=../static/images/chuwalBlanco.png width="115" height="30">
+             </a>
           </a>
         </div>
         
@@ -111,7 +122,7 @@
             
 
             <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
-            <button class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
+            <button class="logo2" class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
               <big><b>WoWSuchApp</b></big>
               <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
               <span class="caret"></span>
@@ -125,7 +136,6 @@
               <li><a href="#">Ayuda</a></li>
               <li class="divider"></li>
               <li><a href="#">Cerrar Sesión</a></li>
-              <li><img src=../static/images/bot.png width="20" height="15"></li>
             </ul>
           </ul>
         </div>
