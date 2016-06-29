@@ -1,8 +1,31 @@
 {{extend 'chuTemplate.html'}}
 
 {{block body}}
-<div class="row">  
-  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+
+
+<head>
+<link rel="icon" href="{{=URL('static','images/ChuwalFanIco.png')}}">
+</head>
+
+
+<style>
+
+  .button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+} 
+
+</style>
+
+
+ <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+    <div class="row"> 
     <center class="container one" style="border-radius: 10px; background-color:#F6E490; width:100%;">
       <h4 style="text-decoration-color:#B37E44;">Mapa</h4>
 
@@ -52,10 +75,17 @@
         });
       </script>
 
-      <button class="btn btn-default" style="border-radius: 10px; background-color:#F6E490;">
-        <a href="{{=URL('chuList','index')}}">Esculturas</a>
-      </button>  
+      </br>
+
+     <button class="button" width=20 height=52>
+        <a href="{{=URL('chuListaEsculturas','index')}}" style="color:white;">Esculturas</a>
+      </button> 
+
     </center>
+    
+    
   </div>
+
 </div>
+
 {{end}}

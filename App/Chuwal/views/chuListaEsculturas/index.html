@@ -45,81 +45,181 @@
 	padding-left: 10px;
 }
 
+.contenedor{
+	padding: 10px 10px 10px 10px
+	
+}
+
+.scrollbar
+{
+	margin:center;
+	float: left;
+	height: 308px;
+	width: 600px;
+	background: transparent;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+.force-overflow
+{
+	min-height: 300px;
+}
+
+#wrapper
+{
+	width: 500px;
+	margin: auto;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 40px;
+	background-color: #FFFE9F;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:transparent;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #BC9059;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #FFFE9F;
+}
+
+
 
 }
 
 </style>
-
-<div class="row pT">  
+  
   <div class="p">
-  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
-   <div class=conteiner-fluid>
-    <div class="row">
-      <div class="thumbnail">
-      <div class="caption">
+  	<div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+  	<div class="conteiner-fluid">
+  		<div class="row">
+  			<div class="thumbnail">
+  				<div class="conteiner-fluid" class="contenedor">
+  				<div class="p">
+   				<center>
+   				<p class="p"><b><big>Lista de Esculturas</big></b></p>
+     			</center>
+   					<div class=conteiner-fluid>
+		 				<div class="row">
+		 					<div id="wrapper">
+		 						<div class="scrollbar" id="style-2">
+     		 						<div class="force-overflow">
+					     		 		<div class="thumbnail">
+					      		  			<table class="table table-striped">
+					     						<tbody>
+					     							<tr>
+												      <th><img src="{{=URL('static','images/escultura1.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b> La pelada de Emi </b></p></td>
+												      <td>
+												      	<font color="#C0CA33"><i>Adquirida</i>
+												      	</font>
+												      </td>
+												      <td><button class="button" width=20 height=52>Ver</button></td>
+												    </tr>
 
 
-      <table class="table table-striped">
-     
-  <thead> 
-  <div class="p">
-    <tr>
-      <th></th><p class="p"><b><big>
-     Lista de Esculturas</big></b> </p>
-     <th> </th>
-    </tr>
-  </thead>
-  <tbody>
+												    <tr>
+												       	<th><img src="{{=URL('static','images/esculturaBloqueada.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La chica que nunca pudiste tener</b></p></td>
+												      <td>
+												      <font color="#F44336"><i>Bloqueada</i></font>
+												      </td>
+												      <td><button class="button2" width=20 height=52>Jugar</button></td>
+												    </tr>
 
 
-    <tr>
-      <th><img src="{{=URL('static','images/escultura1.png')}}" height="60px" widht="60px"/></th>
-      <td><p class="p"><b> La pelada de Emi </b></p></td>
-      <td>
-      	<font color="#C0CA33"><i>Adquirida</i>
-      	</font>
-      </td>
-      <td><button class="button" width=20 height=52>Ver</button></td>
-    </tr>
+												    <tr>
+												       <th><img src="{{=URL('static','images/escultura3.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La morsa de Mariano</b></p></td>
+												      <td>
+												      	<font color="#C0CA33">
+												      		<i>Adquirida</i>
+												      	</font>
+												      </td>
+												      <td>
+												      <button class="button" width=20 height=52>Ver</button>
+												      </td>
+												    </tr>
+
+												     <tr>
+												       	<th><img src="{{=URL('static','images/esculturaBloqueada.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La chica que nunca pudiste tener</b></p></td>
+												      <td>
+												      <font color="#F44336"><i>Bloqueada</i></font>
+												      </td>
+												      <td><button class="button2" width=20 height=52>Jugar</button></td>
+												    </tr>
+
+												       <tr>
+												       <th><img src="{{=URL('static','images/escultura3.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La morsa de Mariano</b></p></td>
+												      <td>
+												      	<font color="#C0CA33">
+												      		<i>Adquirida</i>
+												      	</font>
+												      </td>
+												      <td>
+												      <button class="button" width=20 height=52>Ver</button>
+												      </td>
+												    </tr>
+
+												     <tr>
+												       <th><img src="{{=URL('static','images/escultura3.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La morsa de Mariano</b></p></td>
+												      <td>
+												      	<font color="#C0CA33">
+												      		<i>Adquirida</i>
+												      	</font>
+												      </td>
+												      <td>
+												      <button class="button" width=20 height=52>Ver</button>
+												      </td>
+												    </tr>
+
+												     <tr>
+												       	<th><img src="{{=URL('static','images/esculturaBloqueada.png')}}" height="60px" widht="60px"/></th>
+												      <td><p class="p"><b>La chica que nunca pudiste tener</b></p></td>
+												      <td>
+												      <font color="#F44336"><i>Bloqueada</i></font>
+												      </td>
+												      <td><button class="button2" width=20 height=52>Jugar</button></td>
+												    </tr>
 
 
-    <tr>
-       	<th><img src="{{=URL('static','images/esculturaBloqueada.png')}}" height="60px" widht="60px"/></th>
-      <td><p class="p"><b>La chica que nunca pudiste tener</b></p></td>
-      <td>
-      <font color="#F44336"><i>Bloqueada</i>
-      </td>
-      <td><button class="button2" width=20 height=52>Jugar</button></td>
-    </tr>
-
-
-    <tr>
-       <th><img src="{{=URL('static','images/escultura3.png')}}" height="60px" widht="60px"/></th>
-      <td><p class="p"><b>La morsa de Mariano</b></p></td>
-      <td>
-      	<font color="#C0CA33">
-      		<i>Adquirida</i>
-      	</font>
-      </td>
-      <td>
-      <button class="button" width=20 height=52>Ver</button>
-      </td>
-    </tr>
-
-  </tbody>
-  </div>
-</table>
-
-    
-     
-      </div>
-      <center>
-     <a href="{{=URL('controllerVistaHome','index')}}">
-     <span><img src="{{=URL('static','images/atras.png')}}"  height="50px" widht="50px"/></span>
-      </a>
-      </center>
-    </div>
-   </div>
+												</tbody>
+											</div>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<center>
+			<a href="{{=URL('controllerVistaHome','index')}}">
+				<span>
+					<img src="{{=URL('static','images/atras.png')}}"  height="50" widht="50"/>
+				</span>
+			</a>
+		</center>
+	</div>
+</div>
 
 
 
