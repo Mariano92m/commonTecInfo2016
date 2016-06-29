@@ -1,0 +1,127 @@
+{{extend 'chuTemplate.html'}}
+{{block body}}
+
+<style>
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+ .button2 {
+    background-color: #FFC400;
+    border: none;
+    color: #F44336;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.p{
+  color:#774111;
+  font-size: 14; 
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+}
+
+.conteiner-fluid{
+	padding: 20px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+}
+
+</style>
+
+<div class="row pT">  
+  <div class="p">
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+   <div class=conteiner-fluid>
+    <div class="row">
+      <div class="thumbnail">
+      <div class="caption">
+
+
+      <table class="table table-striped">
+     
+  <thead> 
+  <div class="p">
+    <tr>
+      <th></th><p class="p"><b><big>
+     Lista de Esculturas</big></b> </p>
+     <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr>
+      <th><img src="{{=URL('static','images/escultura1.png')}}" height="60px" widht="60px"/></th>
+      <td><p class="p"><b> La pelada de Emi </b></p></td>
+      <td>
+      	<font color="#C0CA33"><i>Adquirida</i>
+      	</font>
+      </td>
+      <td><button class="button" width=20 height=52>Ver</button></td>
+    </tr>
+
+
+    <tr>
+       	<th><img src="{{=URL('static','images/esculturaBloqueada.png')}}" height="60px" widht="60px"/></th>
+      <td><p class="p"><b>La chica que nunca pudiste tener</b></p></td>
+      <td>
+      <font color="#F44336"><i>Bloqueada</i>
+      </td>
+      <td><button class="button2" width=20 height=52>Jugar</button></td>
+    </tr>
+
+
+    <tr>
+       <th><img src="{{=URL('static','images/escultura3.png')}}" height="60px" widht="60px"/></th>
+      <td><p class="p"><b>La morsa de Mariano</b></p></td>
+      <td>
+      	<font color="#C0CA33">
+      		<i>Adquirida</i>
+      	</font>
+      </td>
+      <td>
+      <button class="button" width=20 height=52>Ver</button>
+      </td>
+    </tr>
+
+  </tbody>
+  </div>
+</table>
+
+    
+     
+      </div>
+      <center>
+     <a href="{{=URL('controllerVistaHome','index')}}">
+     <span><img src="{{=URL('static','images/atras.png')}}"  height="50px" widht="50px"/></span>
+      </a>
+      </center>
+    </div>
+   </div>
+
+
+
+
+{{end}}

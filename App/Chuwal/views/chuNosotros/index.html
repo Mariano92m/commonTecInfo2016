@@ -13,12 +13,26 @@
 
 .p{
   color:#774111;
-  font-size: 14;
+  font-size: 14; 
 }
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+}
+
+.conteiner-fluid{
+	padding: 40px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+}
+
 </style>
 
-
-<div class="row">  
+<div class="row pT">  
   <div class="p">
   <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
    <div class=conteiner-fluid>
@@ -29,19 +43,18 @@
       <div class="caption">
 
     
-        <h1>
+        <h3>
         <font color="#774111">
-        <p class=text-center><big>
+        <center>
         <b>Nosotros</b>
-        </p>
-        </big>
+        </center>
         </font>
-        </h1>
+        </h3>
         
           
         
         <font color="#774111">
-			<p>
+			<p class="ppad">
         	De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.
         	
         	
@@ -59,12 +72,15 @@
 		</p>
 		</font>
      </div>
-     <center>
-      <img src="../static/images/atras.png"  height="50" weight="50">
+   
+	  <center>
+     <a href="{{=URL('controllerVistaHome','index')}}">
+      <span><img src="{{=URL('static','images/atras.png')}}"  height="50px" widht="50px"/></span>
+      </a>
       </div>
       </center>
-
      	</div>
+     
     </div>
    </div>
 
