@@ -40,3 +40,15 @@
 [2016-06-24 21:36:18] EDIT ChuwalTest/views/chuLista/index.html: 0
 [2016-06-24 22:29:03] CREATE chuLista.py: 0
 [2016-06-24 22:29:53] EDIT ChuwalTest/controllers/chuLista.py: 1
+[2016-06-30 09:23:49] CREATE trivia.py: 0
+[2016-06-30 09:24:23] DELETE ChuwalTest/controllers/trivia.py: -1
+[2016-06-30 09:24:32] CREATE Trivia.py: 0
+[2016-06-30 09:24:41] EDIT ChuwalTest/controllers/Trivia.py: 1
+[2016-06-30 09:25:14] CREATE Trivia/index.html: 0
+[2016-06-30 09:26:27] CREATE css/Trivia.css: 0
+[2016-06-30 09:47:54] DELETE ChuwalTest/controllers/Trivia.py: -2
+[2016-06-30 09:48:05] CREATE chuTrivia.py: 0
+[2016-06-30 09:48:28] CREATE chuTrivia/index.html: 0
+[2016-06-30 09:48:38] DELETE ChuwalTest/static/css/Trivia.css: 0
+[2016-06-30 09:48:59] CREATE css/chuTrivia.css: 0
+[2016-06-30 09:49:11] DELETE ChuwalTest/views/Trivia/index.html: -56
