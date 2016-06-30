@@ -1,0 +1,55 @@
+.thumbnail .caption {
+	background-color: #F6E490;
+}
+.thumbnail {
+	background-color: #F6E490;
+	border: #F6E490;
+}
+
+
+.text-left {
+	background-color: transparent
+	;color: #774111;
+}
+p,.bajotext{
+	background-color: transparent;
+	color: #774111;
+}
+
+.button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.btn{
+	background-color:#B37E44;
+	color:white;
+}
+.btn:hover, .btn:focus{
+	background-color:#B37E44;
+	color:white;
+}
+.conteiner-fluid{
+	padding: 40px;
+	padding-top: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+.thumbnail{
+	padding: 10px;
+}
+.btn,.btn:hover, .btn:focus{
+	padding:5px 5px;
+}
+.bajotext{ 
+	padding-left:15px;
+}
+.img-responsive{
+	padding-top:30px;
+}
