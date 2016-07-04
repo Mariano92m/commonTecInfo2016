@@ -1,0 +1,88 @@
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+
+
+
+
+<style>
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+  font-size: 14; 
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+}
+
+.conteiner-fluid{
+	padding: 40px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+}
+
+</style>
+
+<div class="row pT">  
+  <div class="p">
+  <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+   <div class=conteiner-fluid>
+    <div class="row">
+      <div class="thumbnail">
+      <img src="../static/images/frascoSolo.png"  width=50 height=50>
+        
+      <div class="caption">
+
+    
+        <h3>
+        <font color="#774111">
+        <center>
+        <b>Nosotros</b>
+        </center>
+        </font>
+        </h3>
+        
+          
+        
+        <font color="#774111">
+			<p class="ppad">
+        	De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge commonTec, con el solo interés de hacer de tu día uno más liviano.
+        	
+        	
+        	
+
+        	</br>
+
+        	Somos una empresa surgida del Informatorio 2016, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.
+
+        	</br>
+
+
+
+       
+		</p>
+		</font>
+     </div>
+   
+	  <center>
+     <a href="{{=URL('chuInterface','chuHome')}}">
+      <span><img src="{{=URL('static','images/atras.png')}}"  height="50px" widht="50px"/></span>
+      </a>
+      </div>
+      </center>
+     	</div>
+     
+    </div>
+   </div>
+
+
+{{end}}
