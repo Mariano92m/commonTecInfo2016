@@ -1,55 +1,12 @@
 {{extend 'chuTemplate.html'}}
 
 {{block body}}
-<html lang="es">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html lang= "es">
 <head>
-	<style>
-	.contenedor{
-		padding-top: 30px;
-		padding-left: 30px;
-		padding-right: 30px;
-		border-color:#F6E490;
-	}
-	.imagen{
-		padding-top: 20px;
-		-webkit-filter: blur(5px);
-    	filter: blur(5px);
-	}
-	.caja{
-		background-color:#F6E490;
-		border-color:transparent;
-	}
-	h4{
-		color:#774111;
-		font-size:25px;
-	}
-	.img-thumbnail{
-		background-color:#B37E44;
-		border-color:transparent;
-		padding-top:10px;
-	}
-	button.trivia.btn{
-		background-color:#FFFE9F;
-		font-style: 
-		top:60px;
-		right:50px;
-	}
-	button.trivia.btn:hover, .btn:focus{
-		background-color:#FFFE9F;
-	}
-	.trivia{
-		font-size:15px;
-		background-color:#FFFE9F;
-		color:white;
-	}
-	button.btn{
-		background-color:#FFFE9F; 
-	}
-
-
-	</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chuTrivia.css')}}"/>
+    <title>Trivia Chuwal</title>
 </head>
 <body>
 

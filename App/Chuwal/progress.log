@@ -44,3 +44,6 @@
 [2016-06-26 23:24:01] EDIT Chuwal/controllers/chuList.py: 0
 [2016-06-27 09:31:56] DELETE Chuwal/views/chuList/index.html.1: -179
 [2016-06-27 09:32:45] EDIT Chuwal/views/chuList/index.html: 136
+[2016-07-04 00:26:55] DELETE Chuwal/views/chuList/index.html: -180
+[2016-07-04 00:30:37] CREATE css/chuListaEsculturas.css: 0
+[2016-07-04 01:22:26] CREATE css/chuTrivia.css: 0
