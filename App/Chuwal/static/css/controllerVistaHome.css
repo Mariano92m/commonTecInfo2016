@@ -22,10 +22,13 @@
     /*Centra el fondo*/
     background-position:center;
 }
+.btnAc{
+    padding-top: 20px;
+}
 .pT{
     padding-top: 10%; 
 }
-
+ 
 .one {
     border-style: solid;
     border-width: 5px;
@@ -37,6 +40,9 @@
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;    
+}
+.common{
+    padding-top:130px;
 }
 /*Plantilla general para los botones*/
 .btnGen{
@@ -51,4 +57,35 @@
     right:2em;
     text-shadow: 2px 1px #000000;
     text-transform: uppercase;
+}
+@media (min-width: 410px) and (max-width: 411px){
+    .common{
+        padding-top:45%;
+    }
+}
+@media (min-width: 359px) and (max-width: 360px){
+    .common{
+        padding-top:55%;
+    }
+}
+@media (min-width: 414px) and (max-width: 435px){
+    .common{
+        padding-top:70%;
+    }
+}
+@media (min-width: 319px) and (max-width: 320px){
+    .common{
+        padding-top:55%;
+    }
+}
+@media (min-width: 374px) and (max-width: 375px){
+    .common{
+        padding-top:70%;
+    }
+}
+@media (min-width: 500px) and (max-width: 768px){
+    .common{
+        padding-top:70%;
+        width:159px;
+        height:100px;
 }

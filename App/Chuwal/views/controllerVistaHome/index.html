@@ -2,34 +2,32 @@
 
 {{block body}}
 
-<style>
-
-
-
-</style>
+<html lang= "es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chuListaEsculturas.css')}}"/>
+    <title>controllerVistaHome</title>
+</head>
   <!-- Logo Y Boton Jugar -->
 
  
   <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
   <div class="row">
 
-    <center><img src="{{=URL('static','images/chuwalLogo.png')}}" width="40%" height="40%" class="btnAc"/></center>
+    <center><img src="../static/images/chuwalLogo.png" width="410" height="410" class="btnAc img-responsive" alt="Imagen responsive">
+    </center>
     
     </br>
 
      <center>
       <a href="{{=URL('chuMap','index')}}">
-        <img src="{{=URL('static','images/BotonJugarPosta.png')}}" width="18%" height="14%"/>
+        <img src="../static/images/BotonJugarPosta.png" width="150" height="100" class="jugar img-responsive" alt="Imagen responsive">
       </a>
     </center>
-
-    </br>
-
-    </br>
-
     <center>
       <a href="{{=URL('chuNosotros','index')}}">
-        <img src="{{=URL('static','images/CommonTec.png')}}" width="15%" height="5%"/>
+        <img src="../static/images/CommonTec.png" width="130" height="100" class=" common img-responsive" alt="Imagen responsive">
       </a>
     </center>
   </div>
