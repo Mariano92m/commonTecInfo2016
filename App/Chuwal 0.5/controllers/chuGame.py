@@ -3,37 +3,19 @@ from gluon.serializers import loads_json
 def chuMap():
 	return dict()
 
-def chuSculptInfo(esc):
-    #Info Importante
-    tit=esc.sculpture_id.title
-    aut=esc.sculpture_id.author
-    cou=esc.sculpture_id.country
-    mat=esc.sculpture_id.material
-    yea=esc.sculpture_id.yearCreate
+def chuSculptInfo():
+    sculp= db.sculpture(request.args(0)) or redirect(URL('chuMap'))
+    return dict(sculp=sculp)
 
-    #Info Extra
-    adr=esc.sculpture_id
-    awa=esc.sculpture_id
+def chuList():
+    #en rows almaceno todos los registros de sculpture cuya ID sea mayor a cero
+    rows = db(db.sculpture.id >0 ).select()
+    #devuelvo un diccionario "sculptures", el cual tiene asignados los elementos de "rows"
+    return dict(sculptures=rows)
 
-    #Imagen Cuadrada
-    img=esc.sculpture_id.fileImageURL
-    return dict(tit=tit, aut=aut, cou=cou, mat=mat, yea=yea, adr=adr, awa=awa)
-
-def chuList(esc):
-	return dict()
-
-def chuHunt(esc):
-    #Info Importante
-    tit=esc.sculpture_id.title
-    aut=esc.sculpture_id.author
-    cou=esc.sculpture_id.country
-    mat=esc.sculpture_id.material
-    yea=esc.sculpture_id.yearCreate
-
-    #Imagen Cuadrada
-    img=esc.sculpture_id.fileImageNHURL
-	return dict()
-
+def chuHunt():
+    sculp= db.sculpture(request.args(0)) or redirect(URL('chuMap'))
+    return dict(sculp=sculp)
 
 #Controladores para el Mapa
 @cache.action()
@@ -71,12 +53,12 @@ def showIMG(condition, imgC):
     return ima
 
 #Muestra un boton dependiendo si esta cazada o no
-def showBut(condition, imgC):
+def showBut(condition, imgC, sc):
     if(imgC!="none"):
         if(condition=='S'):
-            but='<a href="#" class="btn">Ver info</a>';
+            but='<a href='{{=URL('chuSculptInfo', args=sc)}}' class="btn">Ver info</a>'
         else:
-            but='<a href="#" class="btn">Cazar</a>';
+            but='<a href='{{=URL('chuHunt', args=sc)}}' class="btn">Cazar</a>'
     else:
         but='<a href="#" class="btn">Error</a>';
     return but
@@ -92,12 +74,12 @@ def getMarkers():
         #Imagen de la escultura
         imagen= showIMG(row.cazada, row.sculpture_id.fileImageNHURL)
         #Boton
-        but= showBut(row.cazada, row.sculpture_id.fileImageNHURL)
+        but= showBut(row.cazada, row.sculpture_id.fileImageNHURL, row.sculpture_id)
         #Codigo html va en este sector
         html =  (
                 '<div class="container" style="width: 200px;">'
                     '<center>''<img src=' + imagen + ' style="width: 100%;"/>''</center>'
-                    '<center>''<button id="but1">'+ but +'</button>''</center>'
+                    '<center>''<button>'+ but +'</button>''</center>'
                 '</div>'
                 )
         #Setea la informacion de los marcadores
@@ -120,16 +102,16 @@ def getMarkers():
 #Controladores para la Lista
 
 #Controladores para Cazar
-def randQ():
+#def randQ():
 
-def correct():
+#def correct():
 
-def nameSculpt():
+#def nameSculpt():
 
-def mcMaterial():
+#def mcMaterial():
 
-def mcYear():
+#def mcYear():
 
-def mcCountry():
+#def mcCountry():
 
-def mcAuthor():
+#def mcAuthor():
