@@ -49,3 +49,13 @@
 [2016-07-03 15:08:38] CREATE chuInterface/chu404.html: 0
 [2016-07-04 09:21:32] CREATE chuGame/chuSculptInfo.html: 0
 [2016-07-04 09:21:40] DELETE ChuwalTestR/views/chuInterface/chuSculptInfo.html: -34
+[2016-07-05 10:11:03] EDIT ChuwalR/views/chuGame/chuList.html: -52
+[2016-07-05 10:16:57] EDIT ChuwalR/controllers/chuGame.py: 0
+[2016-07-05 10:17:01] EDIT ChuwalR/controllers/chuGame.py: 0
+[2016-07-05 10:17:50] EDIT ChuwalR/controllers/chuGame.py: 0
+[2016-07-05 10:18:47] DELETE ChuwalR/static/css/chuList.css: -277
+[2016-07-05 10:21:00] EDIT ChuwalR/static/css/chuList.css: 0
+[2016-07-05 10:22:56] EDIT Chuwalr/controllers/chuGame.py: 0
+[2016-07-05 10:24:53] EDIT ChuwalR/views/chuGame/chuList.html: 0
+[2016-07-05 10:26:15] EDIT ChuwalR/views/chuGame/chuList.html: -5
+[2016-07-05 10:29:04] EDIT ChuwalR/views/chuGame/chuList.html: 5

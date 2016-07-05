@@ -9,9 +9,9 @@ def chuSculptInfo():
 
 def chuList():
     #en rows almaceno todos los registros de sculpture cuya ID sea mayor a cero
-    rows = db(db.place.id >0 ).select()
+    rows = db(db.sculpture.id >0 ).select()
     #devuelvo un diccionario "sculptures", el cual tiene asignados los elementos de "rows"
-    return dict(places=rows)
+    return dict(sculptures=rows)
 
 def chuHunt():
     sculp= db.sculpture(request.args(0)) or redirect(URL('chuMap'))
