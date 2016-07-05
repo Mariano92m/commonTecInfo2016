@@ -1,7 +1,6 @@
 .thumbnail {
   background-color: #F6E490;
   border: #F6E490;
-  padding-right:50px;
 }
 
 .button {
@@ -16,7 +15,7 @@
 }
 
  .button2 {
-    background-color: #FFC400;
+    background-color: transparent;
     border: none;
     color: #F44336;
     padding: 5px 14px;
@@ -43,8 +42,8 @@
 .conteiner-fluid{
 	padding: 20px;
 	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 40px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .scrollbar
@@ -52,19 +51,19 @@
 	margin:center;
 	float: left;
 	height: 308px;
-	width: 550px;
+	width: 800px;
 	background: transparent;
 	overflow-y: scroll;
 	margin-bottom: 25px;
 }
 .force-overflow
 {
-	min-height: 300px;
+	min-height: 200px;
 }
 
 #wrapper
 {
-	width: 500px;
+	width: 800px;
 	margin: auto;
 }
 
@@ -91,6 +90,8 @@
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: #FFFE9F;
+
+/* Esto es para achicar el tamanio de la pantallas, a varias pantallas y responsive  */
 }
 @media (min-width: 755px) and (max-width: 780px){
 	.scrollbar{
