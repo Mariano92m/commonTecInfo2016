@@ -1,12 +1,10 @@
 .thumbnail .caption {
 	background-color: #F6E490;
 }
-.thumbnail {
-	background-color: #F6E490;
-	border: #F6E490;
+.borde {
+	border-color: transparent;
+	background-color: transparent;
 }
-
-
 .text-left {
 	background-color: transparent
 	;color: #774111;
@@ -15,41 +13,61 @@ p,.bajotext{
 	background-color: transparent;
 	color: #774111;
 }
-
-.button {
+.esculturas {
     background-color: #BC9059;
     border: none;
     color: white;
-    padding: 5px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
 }
+center.container.one{
+  padding-bottom:10px;
+}
 
-.btn{
-	background-color:#B37E44;
-	color:white;
-}
-.btn:hover, .btn:focus{
-	background-color:#B37E44;
-	color:white;
-}
-.conteiner-fluid{
-	padding: 40px;
-	padding-top: 10px;
-	padding-right: 80px;
-	padding-left: 80px;
-}
-.thumbnail{
-	padding: 10px;
-}
-.btn,.btn:hover, .btn:focus{
-	padding:5px 5px;
-}
 .bajotext{ 
 	padding-left:15px;
 }
 .img-responsive{
 	padding-top:30px;
+}
+@media (min-width: 500px) and (max-width: 768px){
+	div.thumbnail.borde{
+    	padding-top: 45px;
+  	}
+}
+@media (min-width: 412px) and (max-width: 435px){
+	div.thumbnail.borde{
+    	padding-top: 40px;
+  	}
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  h3{
+    font-size: 23px;
+  }
+  .frasco{
+    width: 34px;
+    height: 34px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 409px) and (max-width: 414px){
+  h3{
+    font-size: 23px;
+  }
+  .frasco{
+    width: 32px;
+    height: 32px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
 }
