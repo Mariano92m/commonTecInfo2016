@@ -9,3 +9,9 @@ def chuUs():
 
 def chu404():
 	return dict()
+
+def chuHelp():
+	return dict()
+
+def chuWelcome():
+	return dict()

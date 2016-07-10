@@ -1,0 +1,128 @@
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+  color:#774111;
+  font-size: 16px; 
+}
+}
+
+.conteiner-fluid{
+	padding: 40px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.frasco{
+  padding-top:15px;
+}
+.atras{
+  padding-bottom:5px;
+}
+
+
+
+@media (min-width: 500px) and (max-width: 768px){
+  .ppad{
+    font-size:20px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  .caja{
+    padding-top: 35px;
+  }
+
+}
+@media (min-width: 412px) and (max-width: 435px){
+  h3{
+    font-size: 30px;
+  }
+  .frasco{
+    width: 40px;
+    height: 40px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+  .nosotros{
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  h3{
+    font-size: 23px;
+  }
+  .frasco{
+    width: 34px;
+    height: 34px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 409px) and (max-width: 414px){
+  h3{
+    font-size: 23px;
+  }
+  .frasco{
+    width: 32px;
+    height: 32px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 374px) and (max-width: 375px){
+  h3{
+    font-size: 23px;
+  }
+  .frasco{
+    width: 34px;
+    height: 34px;
+  }
+  .ppad{
+    font-size:12px;
+    padding-top:0px;
+  }
+  .nosotros{
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 359px) and (max-width: 360px){
+  h3{
+    font-size: 22px;
+  }
+  .frasco{
+    width: 30px;
+    height: 30px;
+  }
+  .ppad{
+    font-size:12px;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top:0px;
+  }
+  .nosotros{
+    padding-top:0px;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 320px){
+  .conteiner-fluid{
+    padding: 40px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
