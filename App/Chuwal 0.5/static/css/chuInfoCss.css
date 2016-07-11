@@ -21,13 +21,6 @@ p,.bajotext{
     background-color:#B37E44;
     color:white;
 }
-.conteiner-fluid{
-    padding: 40px;
-    padding-top:60px;
-}
-.thumbnail{
-    padding: 10px;
-}
 .btn,.btn:hover, .btn:focus{
     padding:5px 5px;
 }
@@ -36,4 +29,7 @@ p,.bajotext{
 }
 .img-responsive{
     padding-top:30px;
+}
+.image{
+    padding-left: 20px;
 }

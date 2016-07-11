@@ -60,3 +60,5 @@
 [2016-07-05 10:26:15] EDIT ChuwalR/views/chuGame/chuList.html: -5
 [2016-07-05 10:29:04] EDIT ChuwalR/views/chuGame/chuList.html: 5
 [2016-07-07 02:57:03] CREATE css/chuMap.css: 0
+[2016-07-11 08:46:11] CREATE css/chuSculptInfo.css: 0
+[2016-07-11 08:49:34] DELETE Chu/static/css/chuSculptInfo.css: 0

@@ -135,34 +135,34 @@
 		overflow-y: scroll;
 	}
 }
-@media (min-width: 969px) and (max-width: 991px){
+@media (min-width: 961px) and (max-width: 991px){
 	.scrollbar{
 		width: 720px;
 		overflow-y: scroll;
 	}
 }
-@media (min-width: 940px) and (max-width: 968px){
+@media (min-width: 940px) and (max-width: 960px){
 	.scrollbar{
 		width: 720px;
 		overflow-y: scroll;
 		padding-left:90px;
 	}
 }
-@media (min-width: 907px) and (max-width: 939px){
+@media (min-width: 902px) and (max-width: 939px){
 	.scrollbar{
 		width: 690px;
 		overflow-y: scroll;
-		
+		padding-left:90px;
 	}
 }
-@media (min-width: 869px) and (max-width: 906px){
+@media (min-width: 858px) and (max-width: 901px){
 	.scrollbar{
 		width: 660px;
 		overflow-y: scroll;
-		
+		padding-left:40px;
 	}
 }
-@media (min-width: 836px) and (max-width: 968px){
+@media (min-width: 836px) and (max-width: 957px){
 	.scrollbar{
 		width: 630px;
 		overflow-y: scroll;
