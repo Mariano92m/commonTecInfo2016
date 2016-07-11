@@ -14,7 +14,6 @@
 		<div class="thumbnail">
 			<center>
    				<p class="text-center lista"><b>Lista de Esculturas</b></p>
-     			
      		</center>
      		<center>
 			<div class="container-fluid">
@@ -39,9 +38,9 @@
 										{{=H6(title)}}
 										</b></p></<p><font color="#F44336"><i>{{=H6(estado)}}</i></font></p></th>
 										{{if place.cazada=="N":}}
-										<td align="right"><a href="{{=URL('chuGame','chuHunt')}}"><button class="button2"><img src="../static/images/esculturaBloqueada.png" height="60px" widht="60px"/></button></a>
+										<td align="right"><a href="chuHunt.html?args={{=place.sculpture_id}}"><button class="button2"><img src="../static/images/esculturaBloqueada.png" height="60px" widht="60px"/></button></a>
 										{{else:}}
-										<td align="right"><a href="{{=URL('chuInterface','chuInfoEscul')}}"><button class="button2"><img src="../static/images/escultura1.png" height="60px" widht="60px"/></button></td>
+										<td align="right"><a href="chuSculptInfo.html?args={{=place.sculpture_id}}"><button class="button2"><img src="../static/images/escultura1.png" height="60px" widht="60px"/></button></td>
 										</td>
 										{{pass}}
 										{{pass}}
@@ -54,7 +53,7 @@
 			</div>
 			</center>
 			<center>
-			<a href="{{=URL('chuGame','chuMap')}}">
+			<a href="{{=URL('chuInterface','chuHome')}}">
 				<spam><img src="../static/images/atras.png"  height="50" widht="50"/><spam>
 			</a>
 			</center>
@@ -64,7 +63,4 @@
 </div>
 </body>
 </html>
-
-
-
 {{end}}
