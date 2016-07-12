@@ -1,8 +1,7 @@
-{{extend 'chuTemplate.html'}}
 
-{{block body}}
 <html lang= "es">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="{{=URL('static','css/chuWelcome.css')}}"/>
@@ -11,17 +10,18 @@
  	<link rel="stylesheet" href="{{=URL('static','css/docs.css')}}">
  	<link rel="stylesheet" href="{{=URL('static','css/bootstrap-social.css')}}">
  	<link rel="stylesheet" href="{{=URL('static','css/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{=URL('static','css/chuCSS.css')}}"/>
  	<title>Welcome</title>
 </head>
-<body>
 
+<body class="backgroundChu">
 <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
   	<div class="row">
         <div class="account-wall">
 			<center>
 				<img class="btnAc img-responsive" src="../static/images/chuwalLogo.png" width="280" height="280" alt="Imagen responsive">
                 <br>
-                <h4>Un mundo de esculturas, de verdaderas esculturas, te espera listo para ser atrapado.</h4>
+                <h4>Un mundo de esculturas, de verdaderas esculturas,<br> te espera listo para ser atrapado.</h4>
 
             </center>
 
@@ -43,3 +43,4 @@
 </div>
 </body>
 </html>
+
