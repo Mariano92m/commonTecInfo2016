@@ -1,0 +1,40 @@
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+}
+
+.button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.button2 {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-left{
+	padding-left:10px;
+	color:#774111;
+}
+.text-right{
+	padding-right:10px;
+	color:#774111;
+}
+.perfil{
+	padding-top:10px;
+}

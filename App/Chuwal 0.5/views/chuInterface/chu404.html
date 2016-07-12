@@ -1,30 +1,13 @@
 {{extend 'chuTemplate.html'}}
 {{block body}}
-
-<style>
-.thumbnail {
-  background-color: #F6E490;
-  border: #F6E490;
-}
-
-.p{
-  color:#774111;
-  font-size: 14; 
-}
-
-.ppad{
-	padding: 0px 20px 10px 20px;
-}
-
-.conteiner-fluid{
-	padding: 40px;
-	padding-top: 10px;
-	padding-right: 30px;
-	padding-left: 30px;
-}
-}
-</style>
-
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chu404.css')}}"/>
+    <title>chu404</title>
+</head>
+<body>
 
   <div class="p">
     <div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
@@ -34,7 +17,7 @@
           </br>
           </br>
 
-            <img src="../static/images/404.png"  width=100 height=100>
+            <img src="../static/images/404.png"  width="100" height="100">
         
             <div class="caption">
 
@@ -59,7 +42,7 @@
 	       <center>
             <a href="{{=URL('chuInterface','chuHome')}}">
              <span>
-              <img src="{{=URL('static','images/atras.png')}}"  height="50px" widht="50px"/>
+              <img class="atras" src="{{=URL('static','images/atras.png')}}"  height="50" widht="50"/>
             </span>
             </a>
         </div>
@@ -70,6 +53,8 @@
     </div>
    </div>
   </div>
+</body>
+</html>
 
 
 {{end}}

@@ -1,19 +1,15 @@
-.form-signin
-{
+.form-signin{
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
 }
-.form-signin .form-signin-heading, .form-signin .checkbox
-{
+.form-signin .form-signin-heading, .form-signin .checkbox{
     margin-bottom: 10px;
 }
-.form-signin .checkbox
-{
+.form-signin .checkbox{
     font-weight: normal;
 }
-.form-signin .form-control
-{
+.form-signin .form-control{
     position: relative;
     font-size: 16px;
     height: auto;
@@ -22,38 +18,32 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.form-signin .form-control:focus
-{
+.form-signin .form-control:focus{
     z-index: 2;
 }
-.form-signin input[type="text"]
-{
+.form-signin input[type="text"]{
     margin-bottom: -1px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-.form-signin input[type="password"]
-{
+.form-signin input[type="password"]{
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.account-wall
-{
+.account-wall{
     margin-top: 20px;
     padding: 40px 0px 20px 0px;
     background-color: transparent;
 
 }
-.login-title
-{
+.login-title{
     color: #555;
     font-size: 18px;
     font-weight: 400;
     display: block;
 }
-.profile-img
-{
+.profile-img{
     width: 96px;
     height: 96px;
     margin: 0 auto 10px;
@@ -62,17 +52,15 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-.need-help
-{
+.need-help{
     margin-top: 10px;
     color: #774111
 }
-.new-account
-{
+.new-account{
     display: block;
     margin-top: 10px;
 }
-.btn-block {
+.btn-block{
     display: block;
     width: 100%;
     padding-left: 0;
@@ -90,230 +78,11 @@
     border-color: #357ebd;
 }
 
-@media (min-width: 1236px) and (max-width:1275px){
 
-    .form-signin
-  {
-      max-width: 330px;
-      padding: 15px;
-      margin: 0 auto;
-  }
-  .form-signin .form-signin-heading, .form-signin .checkbox
-  {
-      margin-bottom: 10px;
-  }
-  .form-signin .checkbox
-  {
-      font-weight: normal;
-  }
-  .form-signin .form-control
-  {
-      position: relative;
-      font-size: 16px;
-      height: auto;
-      padding: 10px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-  }
-  .form-signin .form-control:focus
-  {
-      z-index: 2;
-  }
-  .form-signin input[type="text"]
-  {
-      margin-bottom: -1px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-  }
-  .form-signin input[type="password"]
-  {
-      margin-bottom: 10px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-  }
-  .account-wall
-  {
-      margin-top: 20px;
-      padding: 40px 0px 20px 0px;
-      background-color: transparent;
+.btn-primary:hover {
 
-  }
-  .login-title
-  {
-      color: #555;
-      font-size: 18px;
-      font-weight: 400;
-      display: block;
-  }
-  .profile-img
-  {
-      width: 96px;
-      height: 96px;
-      margin: 0 auto 10px;
-      display: block;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-  }
-  .need-help
-  {
-      margin-top: 10px;
-      color: #774111
-  }
-  .new-account
-  {
-      display: block;
-      margin-top: 10px;
-  }
-  .btn-block {
-      display: block;
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-  }
-  .btn-lg {
-      padding: 10px 16px;
-      font-size: 18px;
-      line-height: 1.33;
-      border-radius: 6px;
-  }
-  .btn-primary {
-      color: #fff;
-      background-color: #BC9059;
-      border-color: #357ebd;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px){
-
-  .account-wall
-{
-    margin-top: 20px;
-    padding: 40px 0px 20px 0px;
-    background-color: transparent;
-
-  }
-
-   .form-signin
-  {
-      max-width: 530px;
-      padding: 15px;
-      margin: 0 auto;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 768px){
-  .ppad{
-    font-size:20px;
-  }
-  h3{
-    font-size: 40px;
-  }
-  .caja{
-    padding-top: 35px;
-  }
+    text-decoration: none;
+    background-color: #BC9059;
+    border-color: #BC9059;
   
-}
-@media (min-width: 412px) and (max-width: 435px){
-  h3{
-    font-size: 30px;
-  }
-  .frasco{
-    width: 40px;
-    height: 40px;
-  }
-  .ppad{
-    font-size:14px;
-    padding-top:0px;
-  }
-  .nosotros{
-    padding-top:0px;
-  }
-
-
-}
-
-@media (min-width: 410px) and (max-width: 411px){
-
-   .form-signin{
-      max-width: 400px;
-      padding: 10px;
-      margin: 0 auto;
-  }
-
-}
-
-
-
-@media (min-width: 410px) and (max-width: 411px){
-  h3{
-    font-size: 23px;
-  }
-  .frasco{
-    width: 34px;
-    height: 34px;
-  }
-  .ppad{
-    font-size:14px;
-    padding-top:0px;
-  }
-}
-@media (min-width: 409px) and (max-width: 414px){
-  h3{
-    font-size: 23px;
-  }
-  .frasco{
-    width: 32px;
-    height: 32px;
-  }
-  .ppad{
-    font-size:14px;
-    padding-top:0px;
-  }
-
-}
-@media (min-width: 374px) and (max-width: 375px){
-  h3{
-    font-size: 23px;
-  }
-  .frasco{
-    width: 34px;
-    height: 34px;
-  }
-  .ppad{
-    font-size:12px;
-    padding-top:0px;
-  }
-  .nosotros{
-    padding-top:0px;
-  }
-
-}
-@media (min-width: 359px) and (max-width: 360px){
-  h3{
-    font-size: 22px;
-  }
-  .frasco{
-    width: 30px;
-    height: 30px;
-  }
-  .ppad{
-    font-size:12px;
-    padding-right: 20px;
-    padding-left:20px;
-    padding-top:0px;
-  }
-  .nosotros{
-    padding-top:0px;
-  }
-}
-
-@media (min-width: 319px) and (max-width: 320px){
-  .conteiner-fluid{
-    padding: 40px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 }

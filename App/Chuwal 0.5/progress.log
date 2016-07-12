@@ -62,3 +62,6 @@
 [2016-07-07 02:57:03] CREATE css/chuMap.css: 0
 [2016-07-11 08:46:11] CREATE css/chuSculptInfo.css: 0
 [2016-07-11 08:49:34] DELETE Chu/static/css/chuSculptInfo.css: 0
+[2016-07-11 21:49:27] CREATE css/chuProfile.css: 0
+[2016-07-11 23:57:16] CREATE css/chuHunt.css: 0
+[2016-07-12 00:16:35] CREATE css/chu404.css: 0

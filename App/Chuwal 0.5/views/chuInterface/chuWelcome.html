@@ -1,79 +1,43 @@
-<!DOCTYPE html>
-<html>
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+<html lang= "es">
 <head>
-
- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
- <link rel="stylesheet" href="{{=URL('static','css/chuCSS.css')}}"/> 
- <link rel="stylesheet" href="{{=URL('static','css/chuWelcome.css')}}"/>
- <link rel="stylesheet" href="{{=URL('static','css/bootstrap.css')}}">
- <link rel="stylesheet" href="{{=URL('static','css/docs.css')}}">
- <link rel="stylesheet" href="{{=URL('static','css/bootstrap-social.css')}}">
- <link rel="stylesheet" href="{{=URL('static','css/font-awesome.css')}}">
-
-
-<style type="text/css">
-    
-    .btn-primary {
-    color: #fff;
-    background-color: #BC9059;
-    border-color: #fff;
-  
-}
-
-.btn-primary:hover {
-
-    text-decoration: none;
-    background-color: #BC9059;
-    border-color: #BC9059;
-  
-}
-
-.chuLogo{
-
-    margin: 20px 0;
-
-}
-</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chuWelcome.css')}}"/>
+ 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="{{=URL('static','css/bootstrap.css')}}">
+ 	<link rel="stylesheet" href="{{=URL('static','css/docs.css')}}">
+ 	<link rel="stylesheet" href="{{=URL('static','css/bootstrap-social.css')}}">
+ 	<link rel="stylesheet" href="{{=URL('static','css/font-awesome.css')}}">
+ 	<title>Welcome</title>
 </head>
+<body>
 
+<div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+  	<div class="row">
+        <div class="account-wall">
+			<center>
+				<img class="btnAc img-responsive" src="../static/images/chuwalLogo.png" width="280" height="280" alt="Imagen responsive">
+                <br>
+                <h4>Un mundo de esculturas, de verdaderas esculturas, te espera listo para ser atrapado.</h4>
 
-<body class="backgroundChu">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <div class="account-wall">
+            </center>
 
-                <center>
-                    <div class="chuLogo">
+            <form class="form-signin">
 
-                     <img class="btnAc img-responsive" src="../static/images/chuwalLogo.png" width=70% height=70%
-                    alt="Imagen responsive">
-                    </div>
-                    <br>
-                    <h4>Un mundo de esculturas, de verdaderas esculturas, te espera listo para ser atrapado.</h4>
-
-                     </center>
-
-                <form class="form-signin">
-
-                 <a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>
-                Registrarse con Facebook</a>
+				<a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>Registrarse con Facebook</a>
 
                 <br>
                 
-                <a class="btn btn-block btn-social btn-lg btn-google"><i class="fa fa-google"></i>
-                Registrarse con Google</a>
+                <a class="btn btn-block btn-social btn-lg btn-google"><i class="fa fa-google"></i>Registrarse con Google</a>
 
 
                
-                <label class="checkbox pull-left">
-                    <input type="checkbox" value="remember-me">
-                    Recordarme
-                </label>
+                <label class="checkbox pull-left"><input type="checkbox" value="remember-me"><b>Recordarme</b></label>
                 <a href="{{=URL('chuInterface','chuHelp')}}" class="pull-right need-help"><b>Ayuda</b></a><span class="clearfix"></span>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 </div>
