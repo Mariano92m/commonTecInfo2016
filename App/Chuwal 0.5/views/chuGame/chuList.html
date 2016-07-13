@@ -54,10 +54,11 @@
 			</div>
 			</center>
 			<center>
-			<a href="{{=URL('chuInterface','chuHome')}}">
-				<spam><img src="../static/images/atras.png"  height="50" widht="50" hspace="45" /><spam>
-			</a>
-			<button class="esculturas"><a href="{{=URL('chuGame','chuMap')}}" class="btn" style="color:white;">Mapa</a></button>
+				<form class="btn btn-dafault" onclick="history.back()">
+      				<img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+      			</form>
+			<button style="background-color:transparent;">
+			<a href="{{=URL('chuGame','chuMap')}}"><img src="{{=URL('static','images/mapa.png')}}" width="80" height="100"/></a></button>
 			</center>
 		</div>
 

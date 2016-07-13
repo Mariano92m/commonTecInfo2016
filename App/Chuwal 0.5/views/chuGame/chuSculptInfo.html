@@ -27,13 +27,15 @@
             <li class="description"><p><b>Material: Bronce</b></p></li>
             <li class="description"><p><b>Origen: Argentina</b></p></li>
           </h6>
-              <button><a href="{{=URL('chuGame','chuMap')}}" class="btn">Ver en Mapa</a></button>
+              <button style="width:100px;height:45px;"><a href="{{=URL('chuGame','chuMap')}}" class="btn btn-dafault">Ver en Mapa</a></button>
         </div>
        </div>
           <br>
-          <center><a href="{{=URL('chuGame','chuList')}}">
-             <span><img class="atras" src="{{=URL('static','images/atras.png')}}"  height="50" widht="50"/></span>
-          </a></center>
+          <center>
+            <form class="btn btn-dafault" onclick="history.back()" style="background-color:transparent;">
+              <img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+            </form>
+          </center>
     </div>
 
   </div>

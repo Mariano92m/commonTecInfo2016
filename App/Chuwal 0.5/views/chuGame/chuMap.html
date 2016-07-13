@@ -64,10 +64,11 @@
 			        });
 			      </script>
 			      </br>
-			      <a href="{{=URL('chuInterface','chuHome')}}">
-						<spam><img src="../static/images/atras.png" height="50" widht="45" hspace="45" /><spam>
-					</a>
-			      <button class="esculturas"><a href="{{=URL('chuGame','chuList')}}" class="btn" style="color:white;">Esculturas</a></button>
+			      <form class="btn btn-dafault" onclick="history.back()">
+      				<img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+      			  </form>
+			      <button style="background-color:transparent;">
+			      <a href="{{=URL('chuGame','chuList')}}"><img src="{{=URL('static','images/esculturas.png')}}" width="80" height="100"/></a></button>
 			    </center>
 			</div>
 		</div>
