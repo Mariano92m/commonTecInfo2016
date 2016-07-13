@@ -15,6 +15,3 @@ def chuHelp():
 
 def chuWelcome():
 	return dict()
-
-def chuRelated():
-	return dict()
