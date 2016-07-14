@@ -18,3 +18,6 @@ def chuWelcome():
 
 def chuRelated():
 	return dict()
+
+def chuLogin():
+	return dict()

@@ -56,6 +56,21 @@
     margin-top: 10px;
     color: #774111
 }
+
+.need-help:hover{
+  text-decoration: none;
+  color:#774111;
+
+}
+
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
 .new-account{
     display: block;
     margin-top: 10px;
