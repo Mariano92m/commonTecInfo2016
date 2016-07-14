@@ -1,0 +1,75 @@
+@media (min-width: 500px) and (max-width: 768px){
+	img.img-responsive.common{
+		padding-top:200px;
+
+	}
+	.btnAc{
+		padding-top:50px;
+	}
+	.jugar{
+		padding-top:30px;
+	}
+
+}
+@media (min-width: 415px) and (max-width: 499px){
+  	img.img-responsive.common{
+		padding-top:200px;
+		width:150px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+
+}
+@media (min-width: 412px) and (max-width: 414px){
+  	img.img-responsive.common{
+		padding-top:190px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  	img.img-responsive.common{
+		padding-top:115px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+
+}
+
+@media (min-width: 374px) and (max-width: 409px){
+  	img.img-responsive.common{
+		padding-top:148px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+
+}
+@media (min-width: 321px) and (max-width: 373px){
+  	img.img-responsive.common{
+		padding-top:145px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+
+}
+
+@media (min-width: 300px) and (max-width: 320px){
+  img.img-responsive.common{
+		padding-top:85px;
+
+	}
+	.jugar{
+		padding-top:5px;
+	}
+}

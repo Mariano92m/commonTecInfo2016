@@ -1,0 +1,84 @@
+ .thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+  color:#774111;
+  font-size: 16px; 
+}
+.borde {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.atras{
+  padding-bottom:10px;
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+  .ppad{
+    font-size:20px;
+  }
+  h3{
+    font-size: 40px;
+  }
+
+}
+@media (min-width: 412px) and (max-width: 435px){
+  h3{
+    font-size: 26px;
+  }
+  .ppad{
+    font-size:16px;
+  }
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  h3{
+    font-size: 23px;
+  }
+
+  .ppad{
+    font-size:16px;
+  }
+
+}
+@media (min-width: 409px) and (max-width: 414px){
+  h3{
+    font-size: 23px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 374px) and (max-width: 375px){
+  h3{
+    font-size: 20px;
+  }
+  .ppad{
+    font-size:14px;
+  }
+
+}
+@media (min-width: 321px) and (max-width: 360px){
+  h3{
+    font-size: 20px;
+  }
+  .ppad{
+    font-size:14px;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width: 320px){
+  .ppad{
+    font-size:13px;
+  }
+   h3{
+    font-size: 18px;
+  }
+}

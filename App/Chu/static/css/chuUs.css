@@ -1,0 +1,101 @@
+.thumbnail {
+  background-color: #F6E490;
+}
+
+.ppad{
+	padding: 10px 35px 20px 35px;
+  color:#774111;
+}
+
+.frasco{
+  padding-top:10px;
+}
+.atras{
+  padding-bottom:10px;
+}
+.ac{
+  font-size: 13px;
+}
+.borde {
+	border-color: transparent;
+	background-color: transparent;
+}
+a{
+	color:#428bca;
+}
+
+
+@media (min-width: 436px) and (max-width: 768px){
+  .ppad{
+    font-size:20px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  .ac{
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 413px) and (max-width: 435px){
+  h3{
+    font-size: 35px;
+  }
+
+  .ppad{
+    font-size:16px;
+  }
+  .ac{
+    font-size: 14px;
+  }
+
+}
+@media (min-width: 376px) and (max-width: 414px){
+  h3{
+    font-size: 35px;
+  }
+  .ppad{
+    font-size:16px;
+  }
+  .ac{
+    font-size: 14px;
+  }
+
+}
+@media (min-width: 361px) and (max-width: 375px){
+  h3{
+    font-size: 35px;
+  }
+  .ppad{
+    font-size:14px;
+  }
+  .ac{
+    font-size: 12px;
+  }
+
+}
+@media (min-width: 359px) and (max-width: 360px){
+  h3{
+    font-size: 30px;
+  }
+  .ppad{
+    font-size:14px;
+  }
+  .ac{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 358px){
+  .ppad{
+    font-size:13px;
+  }
+   h3{
+    font-size: 30px;
+  }
+  .ac{
+    font-size: 12px;
+  }
+
+}

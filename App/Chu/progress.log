@@ -69,3 +69,5 @@
 [2016-07-13 10:51:11] EDIT Chu/views/chuInterface/chuRelated.html: 0
 [2016-07-13 10:51:42] CREATE css/chuRelated.css: 0
 [2016-07-13 10:52:22] EDIT Chu/controllers/chuInterface.py: 2
+[2016-07-14 08:51:27] CREATE css/chuHelp.css: 0
+[2016-07-14 08:51:56] CREATE css/chuHome.css: 0

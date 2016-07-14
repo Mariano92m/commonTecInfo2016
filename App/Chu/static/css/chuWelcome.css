@@ -8,7 +8,7 @@
 }
 .form-signin .checkbox{
     font-weight: normal;
-}
+} 
 .form-signin .form-control{
     position: relative;
     font-size: 16px;
@@ -56,21 +56,6 @@
     margin-top: 10px;
     color: #774111
 }
-
-.need-help:hover{
-  text-decoration: none;
-  color:#774111;
-
-}
-
-.login-title
-{
-    color: #555;
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-}
-
 .new-account{
     display: block;
     margin-top: 10px;
@@ -100,4 +85,9 @@
     background-color: #BC9059;
     border-color: #BC9059;
   
+}
+@media (min-width: 412px) and (max-width: 435px){
+  .btnAc{
+  	padding-top:30px;
+  }
 }

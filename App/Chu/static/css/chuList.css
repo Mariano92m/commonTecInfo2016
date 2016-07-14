@@ -24,7 +24,10 @@
     display: inline-block;
     font-size: 12px;
 }
-
+.borde {
+	border-color: transparent;
+	background-color: transparent;
+}
 .p{
   color:#774111;
   font-size: 14px; 
@@ -89,208 +92,229 @@
 }
 @media (min-width: 1276px) and (max-width: 1324px){
 	.scrollbar{
-		width: 790px;
+		width: 770px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1236px) and (max-width:1275px){
 	.scrollbar{
-		width: 760px;
+		width: 740px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1192px) and (max-width: 1235px){
 	.scrollbar{
-		width: 730px;
+		width: 720px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1148px) and (max-width: 1191px){
 	.scrollbar{
-		width: 700px;
+		width: 680px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1104px) and (max-width: 1147px){
 	.scrollbar{
-		width: 670px;
+		width: 650px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1056px) and (max-width: 1103px){
 	.scrollbar{
-		width: 640px;
+		width: 620px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 1016px) and (max-width: 1055px){
 	.scrollbar{
-		width: 610px;
+		width: 590px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 992px) and (max-width: 1015px){
 	.scrollbar{
-		width: 590px;
+		width: 570px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 961px) and (max-width: 991px){
 	.scrollbar{
-		width: 720px;
+		width: 700px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 940px) and (max-width: 960px){
 	.scrollbar{
-		width: 720px;
+		width: 700px;
 		overflow-y: scroll;
 		padding-left:90px;
 	}
 }
 @media (min-width: 902px) and (max-width: 939px){
 	.scrollbar{
-		width: 690px;
+		width: 670px;
 		overflow-y: scroll;
 		padding-left:90px;
 	}
 }
 @media (min-width: 858px) and (max-width: 901px){
 	.scrollbar{
-		width: 660px;
+		width: 640px;
 		overflow-y: scroll;
 		padding-left:40px;
 	}
 }
 @media (min-width: 836px) and (max-width: 957px){
 	.scrollbar{
-		width: 630px;
+		width: 610px;
 		overflow-y: scroll;
 		
 	}
 }
 @media (min-width: 801px) and (max-width: 835px){
 	.scrollbar{
-		width: 600px;
+		width: 580px;
 		overflow-y: scroll;
 		
 	}
 }
 @media (min-width: 765px) and (max-width: 800px){
 	.scrollbar{
-		width: 570px;
+		width: 550px;
 		overflow-y: scroll;
 		
 	}
 }
 @media (min-width: 722px) and (max-width: 764px){
 	.scrollbar{
-		width: 540px;
+		width: 520px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 687px) and (max-width: 721px){
 	.scrollbar{
-		width: 510px;
+		width: 490px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 652px) and (max-width: 686px){
 	.scrollbar{
-		width: 480px;
+		width: 460px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 619px) and (max-width: 651px){
 	.scrollbar{
-		width: 450px;
+		width: 430px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 579px) and (max-width: 618px){
 	.scrollbar{
-		width: 420px;
+		width: 400px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 533px) and (max-width: 578px){
 	.scrollbar{
-		width: 380px;
+		width: 360px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 498px) and (max-width: 532px){
 	.scrollbar{
-		width: 350px;
+		width: 330px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 458px) and (max-width: 497px){
 	.scrollbar{
-		width: 320px;
+		width: 300px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 422px) and (max-width: 457px){
 	.scrollbar{
-		width: 290px;
+		width: 270px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 411px) and (max-width: 421px){
 	.scrollbar{
-		width: 275px;
+		width: 255px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 390px) and (max-width: 410px){
 	.scrollbar{
-		width: 260px;
+		width: 240px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 375px) and (max-width: 389px){
 	.scrollbar{
-		width: 240px;
+		width: 220px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 360px) and (max-width: 374px){
 	.scrollbar{
-		width: 230px;
+		width: 210px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 324px) and (max-width: 359px){
 	.scrollbar{
-		width: 200px;
+		width: 180px;
 		overflow-y: scroll;
 	}
 }
 @media (min-width: 320px) and (max-width: 323px){
 	.scrollbar{
-		width: 200px;
+		width: 190px;
 		overflow-y: scroll;
 	}
 	p,h6{
-	  font-size: 13px; 
+	  font-size: 14px; 
+	}
+	.atras{
+		width:100px;
+	}
+	.mapa{
+		width:100px;
+		height:70px;
 	}
 }
 @media (min-width: 301px) and (max-width: 319px){
-	.scrollbar{
-		width: 180px;
-		overflow-y: scroll;
-	}
-	p,h6{
-	  font-size: 12px; 
-	}
-}
-@media (min-width: 0px) and (max-width: 300px){
 	.scrollbar{
 		width: 160px;
 		overflow-y: scroll;
 	}
 	p,h6{
 	  font-size: 12px; 
+	}
+	.atras{
+		width:100px;
+	}
+	.mapa{
+		width:100px;
+		height:70px;
+	}
+}
+@media (min-width: 0px) and (max-width: 300px){
+	.scrollbar{
+		width: 140px;
+		overflow-y: scroll;
+	}
+	p,h6{
+	  font-size: 12px; 
+	}
+	.atras{
+		width:100px;
+	}
+	.mapa{
+		width:100px;
+		height:70px;
 	}
 }
