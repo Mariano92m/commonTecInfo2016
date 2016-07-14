@@ -1,40 +1,31 @@
-.imagen{
-		padding-top: 20px;
-		-webkit-filter: blur(5px);
-    	filter: blur(5px);
+	img.img-responsive{
+		padding-top: 10px;
 	}
-	h4{
+	h3{
 		color:#774111;
 		font-size:25px;
 	}
-	.img-thumbnail{
+	.btn{
 		background-color:#B37E44;
-		border-color:transparent;
-		padding-top:10px;
-	}
-	button.trivia.btn{
-		background-color:#FFFE9F;
-		font-style: 
-		top:60px;
-		right:50px;
-	}
-	button.trivia.btn:hover, .btn:focus{
-		background-color:#FFFE9F;
-	}
-	.trivia{
-		font-size:15px;
-		background-color:#FFFE9F;
 		color:white;
 	}
+	.btn:hover, .btn:focus{
+		background-color:#B37E44;
+		color:white;
+	}
+
 	.borde {
 		border-color: transparent;
 		background-color: transparent;
+	}
+	.ppad{
+		color:#774111;
 	}
 @media (min-width: 500px) and (max-width: 768px){
   .ppad{
     font-size:20px;
   }
-  h4{
+  h3{
     font-size: 40px;
   }
   .caja{
@@ -46,7 +37,7 @@
 
 }
 @media (min-width: 412px) and (max-width: 435px){
-  h4{
+  h3{
     font-size: 28px;
   }
   .ppad{
@@ -56,8 +47,8 @@
 
 }
 @media (min-width: 410px) and (max-width: 411px){
-  h4{
-    font-size: 23px;
+  h3{
+    font-size: 28px;
   }
   .ppad{
     font-size:14px;
@@ -69,12 +60,11 @@
 
 }
 @media (min-width: 409px) and (max-width: 414px){
-  h4{
-    font-size: 23px;
+  h3{
+    font-size: 28px;
   }
   .ppad{
     font-size:14px;
-    padding-top:0px;
   }
   .ac{
     font-size: 11px;
@@ -82,33 +72,28 @@
 
 }
 @media (min-width: 374px) and (max-width: 375px){
-  h4{
-    font-size: 23px;
+  h3{
+    font-size: 28px;
   }
   .ppad{
     font-size:14px;
-    padding-top:0px;
+
   }
 }
 @media (min-width: 359px) and (max-width: 360px){
-  h4{
-    font-size: 22px;
+  h3{
+    font-size: 28px;
   }
   .ppad{
     font-size:14px;
-    padding-right: 20px;
-    padding-left:20px;
-    padding-top:0px;
+
   }
 }
 @media (min-width: 319px) and (max-width: 358px){
    .ppad{
     font-size:14px;
-    padding-right: 20px;
-    padding-left:20px;
-    padding-top:0px;
   }
-   h4 {
-    font-size: 19px;
+   h3 {
+    font-size: 24px;
   }
 }
