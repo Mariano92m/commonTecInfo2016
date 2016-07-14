@@ -19,5 +19,5 @@ def chuWelcome():
 def chuRelated():
 	return dict()
 
-def chuLogin():
+def chuRegister():
 	return dict()

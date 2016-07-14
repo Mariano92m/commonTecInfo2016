@@ -51,19 +51,19 @@
 
             </center>
 
-            <form class="form-signin">
+            <form class="form-signin" action="../cazador/registro" method="post">
 
-                <input type="text" class="form-control" placeholder="Usuario" required autofocus>
+                <input type="text" class="form-control" name="nick" placeholder="Usuario" required autofocus>
 
-                <input type="password" class="form-control" placeholder="Contraseña" required>
+                <input type="password" class="form-control" name="password" placeholder="Contraseña" required>
 
-                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="text" class="form-control" name="email" placeholder="Email" required autofocus>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Registrarse</button>
 
                  <center>       
-                <div class=" btn-block"><a href="{{=URL('chuInterface','chuLogin')}}" class="need-help"><h3>Ingresar</h3></a></div>
+                <div class=" btn-block"><a href="{{=URL('chuInterface','chuWelcome')}}" class="need-help"><h3>Ingresar</h3></a></div>
                 </center>
 
 

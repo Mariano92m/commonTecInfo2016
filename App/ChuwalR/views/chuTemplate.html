@@ -123,7 +123,12 @@
 
             <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
             <button class="logo2" class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
+              {{if session.id==None:}}
               <big><b>WoWSuchApp</b></big>
+              {{else:}}
+              <big><b>{{=session.nickname}}</b></big>
+              {{pass}}
+
               <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
               <span class="caret"></span>
             </button>
@@ -133,7 +138,7 @@
               <li class="divider"></li>
               <li><a href="{{=URL('chuInterface','chuHelp')}}">Ayuda</a></li>
               <li class="divider"></li>
-              <li><a href="{{=URL('chuInterface','chuWelcome')}}">Cerrar Sesión</a></li>
+              <li><a href="{{=URL('cazador','cerrarSession')}}">Cerrar Sesión</a></li>
             </ul>
           </ul>
         </div>
