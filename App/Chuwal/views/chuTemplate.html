@@ -22,7 +22,7 @@
          http://google.com/webmasters -->
     <meta name="google-site-verification" content="">
     <!-- Este es referecia al archivo css (controollervistaP.css) -->
-    <link rel="stylesheet" href="{{=URL('static','css/controllerVistaHome.css')}}"/> 
+    <link rel="stylesheet" href="{{=URL('static','css/chuCSS.css')}}"/> 
 
     <!-- Stylesheet de bootstrap -->
 
@@ -98,7 +98,7 @@
 
   <body class="backgroundChu">
 
-	<!-- Barra de navegacion -->
+  <!-- Barra de navegacion -->
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid" style="background-color:#B37E44;">
         <div class="navbar-header">
@@ -110,29 +110,35 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand">
-            <a href="{{=URL('controllerVistaHome','index')}}">
-              <img class="logo" src=../static/images/chuwalBlanco.png width="115" height="30">
+            <a href="{{=URL('chuInterface','chuHome')}}">
+              <img class="logo" src=../static/images/chuwalBlanco.png width="130" height="31">
              </a>
           </a>
         </div>
         
         <div class="collapse navbar-collapse navbar-ex1-collapse">
          <ul class="nav navbar-nav navbar-right">
-          
+           
+            
 
             <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
             <button class="logo2" class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
+              {{if session.id==None:}}
               <big><b>WoWSuchApp</b></big>
+              {{else:}}
+              <big><b>{{=session.nickname}}</b></big>
+              {{pass}}
+
               <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
               <span class="caret"></span>
             </button>
              
             <ul class="dropdown-menu" style="background-color:#F6E490;">
-              <li><a href="{{=URL('chuPerfil','index')}}">Perfil</a></li>
+              <li><a href="{{=URL('chuInterface','chuProfile')}}">Perfil</a></li>
               <li class="divider"></li>
-              <li><a href="{{=URL('chuAyuda','index')}}">Ayuda</a></li>
+              <li><a href="{{=URL('chuInterface','chuHelp')}}">Ayuda</a></li>
               <li class="divider"></li>
-              <li><a href="#">Cerrar Sesión</a></li>
+              <li><a href="{{=URL('cazador','cerrarSession')}}">Cerrar Sesión</a></li>
             </ul>
           </ul>
         </div>
@@ -143,7 +149,7 @@
     {{end}}
 
 <!-- Librería jQuery requerida por los plugins de JavaScript -->
-	<script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
 <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   </body>

@@ -1,0 +1,130 @@
+.thumbnail {
+  background-color: #F6E490;
+  border: #F6E490;
+}
+
+.p{
+  color:#774111;
+}
+.ppad{
+  	color:#774111; 
+}
+
+.button {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.button2 {
+    background-color: #BC9059;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-left{
+	padding-left:10px;
+	color:#774111;
+}
+.text-right{
+	padding-right:10px;
+	color:#774111;
+}
+.perfil{
+	padding-top:10px;
+}
+.borde {
+	border-color: transparent;
+	background-color: transparent;
+}
+@media (min-width: 500px) and (max-width: 768px){
+  	.text-right,.text-left,.level{
+		font-size: 16px;
+	}
+   	h4{
+    	font-size: 24px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+
+}
+@media (min-width: 412px) and (max-width: 435px){
+  	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+
+}
+@media (min-width: 409px) and (max-width: 414px){
+  	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+}
+@media (min-width: 374px) and (max-width: 375px){
+ 	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+
+}
+@media (min-width: 321px) and (max-width: 360px){
+ 	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+
+}
+
+@media (min-width: 300px) and (max-width: 320px){
+	.text-right,.text-left,.level{
+		font-size: 14px;
+	}
+   	h4{
+    	font-size: 20px;
+   	}
+   	.perfil{
+   		width:100px;
+   	}
+}

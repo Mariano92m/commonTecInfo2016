@@ -1,0 +1,55 @@
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+
+<html> 
+<head lang= "es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chuUs.css')}}"/>
+    <title>Nosotros</title>
+
+</head>
+
+<body>
+<div class="conteiner-fluid">
+  	<div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+    	<div class="row">
+      		<div class="thumbnail borde">
+      			<div class="container one" style="border-radius: 5px; background-color:#F6E490; width:100%;">
+      				<center>
+      					<img src="../static/images/frascoSolo.png" class="img-responsive frasco" alt="img-responsive" width="50" height="50"/>
+      					<h3>
+      					<font color="#774111">
+			        	<b>Nosotros</b>
+			        	</font>
+			        	</h3>
+			        </center>
+			        <font color="#774111">
+		      			<p class="ppad">
+		          		De la búsqueda de un puente entre el mundo del software y aquellos que aún lo desconocen, surge <b>commonTec</b>, con el solo interés de hacer de tu día uno más liviano.
+		      			</br>
+		          		Somos una empresa surgida del <b>Informatorio 2016</b>, con proyectos destinados a la inmejorable eficiencia de tus soluciones, que sacan de la rutina a la rutina misma.
+		          		</p>
+		      			<p class="ppad ac"><em><b>Aclaración:</b> toda la información sobre las esculturas que se usa en Chuwal fue recopilada para terceros, por lo tanto está sujeta a posibles errores. Si encontrás alguno, contactate con nosotros! Así podés ayudarnos a mejorar tu experiencia en el juego.</em>
+		      			</p>
+		      			<p class="ppad ac"><em><b>Correo: </b><a href="#"> commontec16@gmail.com</a></em>
+		      			</p>
+		      		<center>
+		      			<p class="ppad ac"><a href="{{=URL('chuInterface','chuRelated')}}">Aplicaciones Vinculadas</a>
+		      			</p>
+        				<img  class="img-responsive" alt="Imagen responsive" src="../static/images/Informatorio.png" width="200" heignt="70">
+       					<br>
+      					<form class="btn btn-dafault" onclick="history.back()"><img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+      					</form>
+      				</center>
+      				</font>
+      			</div>
+      		</div>
+      	</div>
+  	</div>
+</div>
+</body>
+</html>
+
+{{end}}

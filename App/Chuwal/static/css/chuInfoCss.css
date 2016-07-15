@@ -1,0 +1,99 @@
+	img.img-responsive{
+		padding-top: 10px;
+	}
+	h3{
+		color:#774111;
+		font-size:25px;
+	}
+	.btn{
+		background-color:#B37E44;
+		color:white;
+	}
+	.btn:hover, .btn:focus{
+		background-color:#B37E44;
+		color:white;
+	}
+
+	.borde {
+		border-color: transparent;
+		background-color: transparent;
+	}
+	.ppad{
+		color:#774111;
+	}
+@media (min-width: 500px) and (max-width: 768px){
+  .ppad{
+    font-size:20px;
+  }
+  h3{
+    font-size: 40px;
+  }
+  .caja{
+    padding-top: 35px;
+  }
+  .ac{
+    font-size: 16px;
+  }
+
+}
+@media (min-width: 412px) and (max-width: 435px){
+  h3{
+    font-size: 28px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+
+}
+@media (min-width: 410px) and (max-width: 411px){
+  h3{
+    font-size: 28px;
+  }
+  .ppad{
+    font-size:14px;
+    padding-top:0px;
+  }
+  .ac{
+    font-size: 8px;
+  }
+
+}
+@media (min-width: 409px) and (max-width: 414px){
+  h3{
+    font-size: 28px;
+  }
+  .ppad{
+    font-size:14px;
+  }
+  .ac{
+    font-size: 11px;
+  }
+
+}
+@media (min-width: 374px) and (max-width: 375px){
+  h3{
+    font-size: 28px;
+  }
+  .ppad{
+    font-size:14px;
+
+  }
+}
+@media (min-width: 359px) and (max-width: 360px){
+  h3{
+    font-size: 28px;
+  }
+  .ppad{
+    font-size:14px;
+
+  }
+}
+@media (min-width: 319px) and (max-width: 358px){
+   .ppad{
+    font-size:14px;
+  }
+   h3 {
+    font-size: 24px;
+  }
+}

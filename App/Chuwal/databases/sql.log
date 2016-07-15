@@ -2119,3 +2119,20 @@ CREATE TABLE place(
     cazada TEXT
 );
 success!
+timestamp: 2016-07-14T19:09:25.832000
+CREATE TABLE cazador(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nickname TEXT,
+    password TEXT,
+    puntaje INTEGER,
+    nivel TEXT,
+    email TEXT
+);
+success!
+timestamp: 2016-07-14T19:09:25.930000
+CREATE TABLE sculpturEstado(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cazador_id INTEGER REFERENCES cazador (id) ON DELETE CASCADE  ,
+    sculpture_id INTEGER REFERENCES sculpture (id) ON DELETE CASCADE  
+);
+success!

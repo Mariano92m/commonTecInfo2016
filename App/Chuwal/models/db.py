@@ -149,7 +149,16 @@ auth.settings.reset_password_requires_verification = True
 #db.comment.body.requires=IS_NOT_EMPTY()
 #db.comment.image_id.writable = db.comment.image_id.readable=False
 
-#Base de datos de las esculturas
+#Tabla del usuario
+db.define_table('cazador',
+                Field('nickname','text'),
+                Field('password','text'),
+                Field('puntaje','integer'),
+                Field('nivel','text'),
+                Field('email','text'),
+                migrate='cazador.table')
+
+#Tabla de las esculturas
 db.define_table('sculpture',
                 Field('title'),
                 Field('author','text'),
@@ -161,6 +170,12 @@ db.define_table('sculpture',
                 Field('fileImageNHURL', 'text'),
                 Field('awards','text'),
                 migrate='sculpture.table')
+
+#Tabla de esculturas cazadas por cazador
+db.define_table('sculpturEstado',
+                Field('cazador_id', db.cazador),
+                Field('sculpture_id', db.sculpture),
+                migrate='sculpturEstado.table')
 
 #Base de datos de las coordenadas
 db.define_table('place',
