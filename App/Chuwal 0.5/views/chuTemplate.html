@@ -99,6 +99,27 @@
   <body class="backgroundChu">
 
   <!-- Barra de navegacion -->
+<style>
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color:white;
+	}
+	.navbar-default .navbar-toggle{
+	  border-color:transparent;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	  background-color:transparent;
+	}
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	  background-color:transparent;
+	  background-image: none;
+	}
+	.dropdown-menu .divider {
+	  background-color:transparent;
+	}
+    button.logo2.btn{
+	  border-color:transparent;
+	}
+</style>
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid" style="background-color:#B37E44;">
         <div class="navbar-header">
@@ -134,11 +155,11 @@
             </button>
              
             <ul class="dropdown-menu" style="background-color:#F6E490;">
-              <li><a href="{{=URL('chuInterface','chuProfile')}}">Perfil</a></li>
+              <li><a href="{{=URL('chuInterface','chuProfile')}}" style="color:#774111;">Perfil</a></li>
               <li class="divider"></li>
-              <li><a href="{{=URL('chuInterface','chuHelp')}}">Ayuda</a></li>
+              <li><a href="{{=URL('chuInterface','chuHelp')}}" style="color:#774111;">Ayuda</a></li>
               <li class="divider"></li>
-              <li><a href="{{=URL('cazador','cerrarSession')}}">Cerrar Sesión</a></li>
+              <li><a href="{{=URL('cazador','cerrarSession')}}" style="color:#774111;">Cerrar Sesión</a></li>
             </ul>
           </ul>
         </div>
