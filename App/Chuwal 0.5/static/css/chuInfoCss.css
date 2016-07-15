@@ -1,9 +1,9 @@
-	img.img-responsive{
-		padding-top: 10px;
+	.img-thumbnail{
+		background-color:#B37E44;
+		border-color:transparent;
 	}
 	h3{
 		color:#774111;
-		font-size:25px;
 	}
 	.btn{
 		background-color:#B37E44;
@@ -20,80 +20,107 @@
 	}
 	.ppad{
 		color:#774111;
+		font-family:serif;
 	}
-@media (min-width: 500px) and (max-width: 768px){
+	.text-left{
+		color:#774111;
+		padding-left:50px;
+	}
+	.col-md-6{
+		padding-top:10px;
+	}
+@media (min-width: 750px) and (max-width: 989px){
   .ppad{
-    font-size:20px;
+  	font-size:18px;
   }
   h3{
-    font-size: 40px;
+    font-size: 38px;
   }
-  .caja{
-    padding-top: 35px;
+  .text-left{
+  	padding-left:180px;
+
   }
-  .ac{
-    font-size: 16px;
+}
+@media (min-width: 500px) and (max-width: 749px){
+  .ppad{
+  	font-size:18px;
+  }
+  h3{
+    font-size: 38px;
+  }
+  .text-left{
+  	padding-left:100px;
+
   }
 
 }
-@media (min-width: 412px) and (max-width: 435px){
+@media (min-width: 415px) and (max-width: 435px){
   h3{
-    font-size: 28px;
+    font-size: 32px;
   }
   .ppad{
-    font-size:14px;
-    padding-top:0px;
+    font-size:18px;
+  }
+  .text-left{
+  	padding-left:25px;
   }
 
 }
 @media (min-width: 410px) and (max-width: 411px){
   h3{
-    font-size: 28px;
+    font-size: 32px;
   }
   .ppad{
-    font-size:14px;
-    padding-top:0px;
+    font-size:18px;
   }
-  .ac{
-    font-size: 8px;
+  .text-left{
+  	padding-left:10px;
+  }
+}
+@media (min-width: 412px) and (max-width: 414px){
+  h3{
+    font-size: 32px;
+  }
+  .ppad{
+    font-size:18px;
+  }
+  .text-left{
+  	padding-left:20px;
   }
 
 }
-@media (min-width: 409px) and (max-width: 414px){
+@media (min-width: 374px) and (max-width: 409px){
+  h3{
+    font-size: 32px;
+  }
+  .ppad{
+    font-size:18px;
+
+  }
+  .text-left{
+  	padding-left:0px;
+  }
+}
+@media (min-width: 359px) and (max-width: 373px){
   h3{
     font-size: 28px;
   }
   .ppad{
-    font-size:14px;
+    font-size:16px;
   }
-  .ac{
-    font-size: 11px;
-  }
-
-}
-@media (min-width: 374px) and (max-width: 375px){
-  h3{
-    font-size: 28px;
-  }
-  .ppad{
-    font-size:14px;
-
+  .text-left{
+  	padding-left:0px;
   }
 }
-@media (min-width: 359px) and (max-width: 360px){
-  h3{
-    font-size: 28px;
-  }
-  .ppad{
-    font-size:14px;
-
-  }
-}
-@media (min-width: 319px) and (max-width: 358px){
+@media (min-width: 300px) and (max-width: 358px){
    .ppad{
     font-size:14px;
   }
    h3 {
     font-size: 24px;
   }
+  .text-left{
+  	padding-left:0px;
+  }
+
 }
