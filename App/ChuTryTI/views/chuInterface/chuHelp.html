@@ -1,0 +1,70 @@
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+
+<html>
+<head lang= "es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{=URL('static','css/chuHelp.css')}}"/>
+    <title>chuHelp</title>
+
+</head>
+
+<body>
+<div class="conteiner-fluid">
+  	<div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 vcenter">
+    	<div class="row">
+      		<div class="thumbnail borde">
+        		<div class="container one" style="border-radius: 5px; background-color:#F6E490; width:100%;">
+        			<center>
+        			<a href="{{=URL('chuInterface','chuHome')}}"><img src="../static/images/chuwalSolo.png"  width="240" height="240" class="img-responsive chuwal" alt="img-responsive"></a>
+			        
+			        <h4 style="color:#774111"><b>Ayuda</b></h4>
+			        </center>
+			        
+			        <p class="ppad"> 
+			          <b>Chuwal es un juego donde tu objetivo es cazar las esculturas más extravagantes de la ciudad de Resistencia, más conocida como "La ciudad de las esculturas"</b>
+			          <br>
+			          <br>
+			        
+			          <b>1-</b>  Para comenzar a jugar, presionás el botón  <i>"Jugar"</i>  del menú de inicio.
+			          <br>
+			 		  <br>
+			          <img src="../static/images/BotonJugarPosta.png"  width="90" height="54" class="img-responsive" alt="img-responsive">
+			          <br>
+
+			          <b>2-</b> Ya estas dentro del mapa. Ahora, vas a poder ver las ubicaciones de cada escultura que podés cazar (o que ya cazaste).
+			          <br>
+			          <br>
+
+			          <img src="../static/images/PinVerde.png"  width="31" height="58" class="img-responsive" alt="img-responsive">
+			          <br>
+
+			          <b>3-</b> Presionando cualquiera de los marcadores, vas a tener la posibilidad de cualquiera de dos botones: uno para ver la información de la escultura (si ya la cazaste) y otro para cazar la escultura (si aún no lo hiciste)
+			          <br>
+			          <br>
+
+			          <b>4-</b> Si elegís <b>cazar la escultura</b> (tanto del mapa como de la lista), vas a tener frente a vos una <i>trivia</i>, a través de la cual vas a poder obtener la obra de arte.<br> Cabe destacar que para saber qué responder, es necesario que visites la escultura y encuentres su placa informativa.
+			          <br>
+			          <br>
+
+			          <b>5-</b> Por cada vez que no aciertes, se te descontarán puntos del total de la escultura ¡Así que no te arriesgues!'
+			          <br>
+
+			        </p>
+			   
+				  	<center>
+			     		<form class="btn btn-dafault" onclick="history.back()"><img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+			      		</form>
+			        </center>
+     	        </div>
+     	    </div>
+     	</div>
+  	</div>
+</div>
+</body>
+</html>
+
+
+{{end}}
