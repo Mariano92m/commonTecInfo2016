@@ -22,10 +22,10 @@
       						<div class="caption">
 								<div class="wrap">
 									<center>
-									<h4><b>De qué material está hecho esta escultura?</b></h4><br>
+									<h4><b>{{=p}}</b></h4><br>
 									{{for i in mc:}}
 
-										<button style='width:250px;' class="btn trivia" class="btn btn-default btn-responsive"><a href="{{=URL('chuGame','correcto('+i+')')}}" style="color:#774111;">{{=i}}</a></button><br><br>
+										<button style='width:300px;' class="btn trivia" class="btn btn-default btn-responsive"><a href="{{=URL('chuGame','correcto('+i+')')}}" style="color:#774111;">{{=i}}</a></button><br><br>
 
 									{{pass}}
 									</center>

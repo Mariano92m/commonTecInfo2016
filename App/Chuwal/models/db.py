@@ -171,12 +171,6 @@ db.define_table('sculpture',
                 Field('awards','text'),
                 migrate='sculpture.table')
 
-#Tabla de esculturas cazadas por cazador
-db.define_table('sculpturEstado',
-                Field('cazador_id', db.cazador),
-                Field('sculpture_id', db.sculpture),
-                migrate='sculpturEstado.table')
-
 #Base de datos de las coordenadas
 db.define_table('place',
                 Field('name', 'text', requires=IS_NOT_EMPTY()),
@@ -185,6 +179,12 @@ db.define_table('place',
                 Field('sculpture_id', db.sculpture),
                 Field('cazada','text'),
                 migrate='place.table')
+
+#Tabla de esculturas cazadas por cazador
+db.define_table('sculpturEstado',
+                Field('cazador_id', db.cazador),
+                Field('place_id', db.place),
+                migrate='sculpturEstado.table')
 
 db.place.sculpture_id_requires = IS_IN_DB(db, db.sculpture.id, '%(title)s')
 db.place.lat.requires = IS_NOT_EMPTY()

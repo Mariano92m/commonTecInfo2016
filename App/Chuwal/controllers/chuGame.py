@@ -3,28 +3,41 @@ import random
 #HTML
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 def chuMap():
-    return dict()
+    if session.nickname!='':
+        return dict()
+    else:
+        redirect(URL('chuInterface','chuRegister'))
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 def chuSculptInfo():
-    idNum= getId(URL(args=request.args, vars=request.get_vars, host=True))
-    sculp= db.sculpture(idNum)
-    return dict(sculp=sculp)
+    if session.nickname!='':
+        idNum= getId(URL(args=request.args, vars=request.get_vars, host=True))
+        sculp= db.sculpture(idNum)
+        return dict(sculp=sculp)
+    else:
+        redirect(URL('chuInterface','chuRegister'))
+    
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Controladores para la Lista
 def chuList():
-    #en rows almaceno todos los registros de sculpture cuya ID sea mayor a cero
-    places=db().select(db.place.ALL,orderby=db.place.id)
-    return dict(places=places)
+    if session.nickname!='':
+        #en rows almaceno todos los registros de sculpture cuya ID sea mayor a cero
+        places=db().select(db.place.ALL,orderby=db.place.id)
+        return dict(places=places)
+    else:
+        redirect(URL('chuInterface','chuRegister'))
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 def chuHunt():
-    idNum= getId(URL(args=request.args, vars=request.get_vars, host=True))
-    sculp= db.sculpture(idNum)
-    mc=mulChoice()
+    if session.nickname!='':
+        idNum= getId(URL(args=request.args, vars=request.get_vars, host=True))
+        sculp= db.sculpture(idNum)
+        mc,p=mulChoice()
+        return dict(sculp=sculp, mc=mc, p=p)
+    else:
+        redirect(URL('chuInterface','chuRegister'))
 
-    return dict(sculp=sculp, mc=mc)
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Controladores para el Mapa
@@ -59,19 +72,21 @@ def getId(url):
     return numId
 
 def correcto(d):
+    d=URL(args=request.args)
     s=setIDFromURL()
+    f=False
     if (d==s.title):
-        return True
+        f=True
     elif (d==s.author):
-        return True
+        f=True
     elif (d==s.material):
-        return True
+        f=True
     elif (d==s.country):
-        return True
+        f=True
     elif (d==s.yearCreate):
-        return True
-    else:
-        return False
+        f=True
+
+    return f
 
 #def correcto():
 #    if session.op1 == (db(db.sculpture.id == setIDFromURL()).select())[0].
@@ -113,6 +128,7 @@ def showBut(condition, imgC, sc):
 def getMarkers():
     places = []
     rows = db(db.place.id >0 ).select()
+
     for row in rows:
 
         #Color del marcador
@@ -164,8 +180,16 @@ def randQ(arg):
         3: mulChoC(sculp.country),#Country
         4: mulChoA(sculp.author) #Author
     }
+    sw = {
+        0:"¿Cual es el nombre de a escultura?",
+        1:"¿De que material esta hecha la escultura?",
+        2:"¿En que año fue creada?",
+        3:"¿De que pais es/son el/los autor/es de la escultura?",
+        4:"¿Como se llama el/los autor/es de la escultura?"
+    }
     func= switcher.get(arg, "Error")
-    return func
+    p= sw.get(arg,"Error")
+    return func, p
 
 #Random argument
 def arg():
@@ -190,9 +214,9 @@ def existe(lista, elemento):
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Crea el multiple choice y lo reordena                              #Done
 def mulChoice():
-    l=randQ(arg())
-    a=randOrd(l)
-    return (a)
+    m,p=randQ(arg())
+    m=randOrd(m)
+    return (m,p)
 
 def none(dato):
     if(dato == '-'):

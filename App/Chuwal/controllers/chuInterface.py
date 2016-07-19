@@ -1,8 +1,14 @@
 def chuHome():
-	return dict()
+	if session.nickname!='':
+        return dict()
+    else:
+        redirect(URL('chuInterface','chuRegister'))
 
 def chuProfile():
-	return dict()
+	if session.nickname!='':
+        return dict()
+    else:
+        redirect(URL('chuInterface','chuRegister'))
 
 def chuUs():
 	return dict()
