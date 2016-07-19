@@ -1,0 +1,79 @@
+{{extend 'chuTemplate.html'}}
+
+{{block body}}
+
+
+<html>
+<head lang= "es">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="{{=URL('static','images/ChuwalFanIco.png')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/chuMap.css')}}"/>
+	<title>chumap</title>
+
+</head>
+
+
+<body>
+<div class="conteiner-fluid">
+  	<div class="col-md-offset-2 col-xs-offset-1 col-xs-10 col-md-8 center">
+    	<div class="row caja">
+      		<div class="thumbnail borde"> 
+			    <center class="container one" style="border-radius: 5px; background-color:#F6E490; width:100%;">
+			      <h3 style="color:#B37E44;"><b class="mapa">Mapa</b></h3>
+			      <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+			      <script src="{{=URL('static','js/gmaps.js')}}"></script>
+			      <div id="map" class="img-responsive" alt="img-responsive" style="height:350px; width:800px" width="50%" height="50%" class="one"></div>
+			      <script>
+			        /* Inicializacion del mapa */
+			        $(document).ready(function(){
+			          map = new GMaps({
+			            div: '#map',
+			            lat: -27.450906,
+			            lng: -58.986579,
+			            maxZoom:17,
+			            minZoom:17,
+			            disableDefaultUI:true,
+			            streetViewControl: false,
+			          });
+			          
+			          /* Estilo del mapa */
+			          var styles = [
+			            {
+			              featureType: "road.arterial",
+			              elementType: "geometry",
+			              stylers: [
+			                { hue: "#F3BA5D" },
+			                { saturation: 50 }
+			              ]
+			            },
+			            {
+			              featureType: "poi",
+			              elementType: "labels",
+			              stylers: [
+			                { visibility: "off" }
+			              ]
+			            }
+			          ];
+			          map.setOptions({styles: styles});
+			          
+			          /* Posiciona los marcadores */
+			          $.getJSON('{{=URL('chuGame','getMarkers')}}', function(data){
+			            map.addMarkers(data);
+			          });
+			        });
+			      </script>
+			      </br>
+			      <form class="btn btn-dafault" onclick="history.back()">
+      				<img src="{{=URL('static','images/atras.png')}}" width="80" height="30"/>
+      			  </form>
+			      <button style="background-color:transparent;">
+			      <a href="{{=URL('chuGame','chuList')}}"><img src="{{=URL('static','images/esculturas.png')}}" width="80" height="100"/></a></button>
+			    </center>
+			</div>
+		</div>
+    </div>
+</div>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,178 @@
+{{#extend 'layout.html'}}
+
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+    <!-- Always force latest IE rendering engine
+         (even in intranet) & Chrome Frame
+         Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+    <!--  Mobile Viewport Fix
+          j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+          device-width: Occupy full width of the screen in its current orientation
+          initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+          user-scalable = yes allows the user to zoom in -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuwal</title>
+    <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+    <meta name="application-name" content="{{=request.application}}">
+    <!-- Speaking of Google, don't forget to set your site up:
+         http://google.com/webmasters -->
+    <meta name="google-site-verification" content="">
+    <!-- Este es referecia al archivo css (controollervistaP.css) -->
+    <link rel="stylesheet" href="{{=URL('static','css/chuCSS.css')}}"/> 
+
+    <!-- Stylesheet de bootstrap -->
+
+    <!-- Versión compilada y comprimida del CSS de Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+     
+    <!-- Tema opcional -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+    <!-- Stylesheet de material disign -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+
+    <!-- FavIcon de la pagina, el jarrito en cada pestania -->
+    <link rel="icon" href="{{=URL('static','images/ChuwalFanIco.png')}}">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables
+         HTML5 elements & feature detects -->
+
+    <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
+        <![endif]-->
+    <!-- Favicons -->
+    {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+    {{block head}}{{end}}
+    {{
+    # using sidebars need to know what sidebar you want to use
+    mc0 = 'col-md-12'
+    mc1 = 'col-md-9'
+    mc2 = 'col-md-6'
+    left_sidebar_enabled = globals().get('left_sidebar_enabled', False)
+    right_sidebar_enabled = globals().get('right_sidebar_enabled', False)
+    middle_column = {0: mc0, 1: mc1, 2: mc2}[
+    (left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]
+    }}
+
+    <style> [type="button"]
+    {
+        width:100%;
+        height:100%;
+        display:block;
+        background-color:transparent;
+        color:white;
+        border:none;
+        outline:none;
+    }
+
+    .logo{
+
+      margin: 10px 0;
+    }
+
+      .logo2{
+
+        margin: 5px 0;
+    }
+
+    </style>
+    
+    <style>
+      /* iPhone 4 ----------- */
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+        {{block mediaCell}}
+        {{end}}
+      }
+
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      /* Styles */
+      }
+    </style>
+
+  </head>
+
+  <body class="backgroundChu">
+
+  <!-- Barra de navegacion -->
+<style>
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color:white;
+	}
+	.navbar-default .navbar-toggle{
+	  border-color:transparent;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	  background-color:transparent;
+	}
+	.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	  background-color:transparent;
+	  background-image: none;
+	}
+	.dropdown-menu .divider {
+	  background-color:transparent;
+	}
+    button.logo2.btn{
+	  border-color:transparent;
+	}
+</style>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid" style="background-color:#B37E44;">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">
+            <a href="{{=URL('chuInterface','chuHome')}}">
+              <img class="logo" src=../static/images/chuwalBlanco.png width="130" height="31">
+             </a>
+          </a>
+        </div>
+        
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+         <ul class="nav navbar-nav navbar-right">
+           
+            
+
+            <!--Aca va el Perfil del Usuario, es solo una muestra de como quedaria despues hayq ue modificarlo-->
+            <button class="logo2" class="btn dropdown-toggle disable" style="background-color:#B37E44; color:#ffffff;" data-toggle="dropdown">
+              {{if session.id==None:}}
+              <big><b>WoWSuchApp</b></big>
+              {{else:}}
+              <big><b>{{=session.nickname}}</b></big>
+              {{pass}}
+
+              <img src=../static/images/user.jpg width="32" height="32" class="img-circle">
+              <span class="caret"></span>
+            </button>
+             
+            <ul class="dropdown-menu" style="background-color:#F6E490;">
+              <li><a href="{{=URL('chuInterface','chuProfile')}}" style="color:#774111;">Perfil</a></li>
+              <li class="divider"></li>
+              <li><a href="{{=URL('chuInterface','chuHelp')}}" style="color:#774111;">Ayuda</a></li>
+              <li class="divider"></li>
+              <li><a href="{{=URL('cazador','cerrarSession')}}" style="color:#774111;">Cerrar Sesión</a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {{block body}}
+    {{end}}
+
+<!-- Librería jQuery requerida por los plugins de JavaScript -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+<!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

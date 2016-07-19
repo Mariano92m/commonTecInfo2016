@@ -1,0 +1,19 @@
+.thumbnail {
+  background-color: #F6E490;
+}
+
+.p{
+  color:#774111; 
+}
+
+.ppad{
+	padding: 0px 20px 10px 20px;
+}
+
+.atras{
+	padding-bottom:10px;
+}
+.borde {
+	border-color: transparent;
+	background-color: transparent;
+}
