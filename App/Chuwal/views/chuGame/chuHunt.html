@@ -25,7 +25,7 @@
 									<h4><b>{{=p}}</b></h4><br>
 									{{for i in mc:}}
 
-										<button style='width:300px;' class="btn trivia" class="btn btn-default btn-responsive"><a href="{{=URL('chuGame','correcto('+i+')')}}" style="color:#774111;">{{=i}}</a></button><br><br>
+										<button style='width:300px;' class="btn trivia" class="btn btn-default btn-responsive"><a href="{{=URL('chuGame','respuesta', args=[sculp.id,i])}}" style="color:#774111;">{{=i}}</a></button><br><br>
 
 									{{pass}}
 									</center>

@@ -24,7 +24,12 @@ def chuList():
     if session.nickname!='':
         #en rows almaceno todos los registros de sculpture cuya ID sea mayor a cero
         places=db().select(db.place.ALL,orderby=db.place.id)
-        return dict(places=places)
+
+        #Usuario actual
+        userId=db(db.cazador.nickname==session.nickname).select(db.cazador.id)
+        uEst=db(db.sculpturEstado.cazador_id == userId[0].id).select()
+
+        return dict(places=places, uEst=uEst)
     else:
         redirect(URL('chuInterface','chuRegister'))
 
@@ -38,6 +43,16 @@ def chuHunt():
     else:
         redirect(URL('chuInterface','chuRegister'))
 
+#///////////////////////////////////////////////////////////////////////////////////////////////#
+def chuHuntCorrecta():
+    idS=URL(args=request.args)
+    sculp=db.sculpture(idS)
+    return dict(sculp=sculp)
+#///////////////////////////////////////////////////////////////////////////////////////////////#
+def chuHuntIncorrecta():
+    idS=URL(args=request.args)
+    sculp=db.sculpture(idS)
+    return dict(sculp=sculp)
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Controladores para el Mapa
@@ -56,11 +71,6 @@ def call():
     return service()
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
-def somefunction():
-    pic = db(db.sculpture).select().first().picture   #select first picture
-    return dict(pic=pic)
-
-#///////////////////////////////////////////////////////////////////////////////////////////////#
 def getId(url):
     cont=0
     cn=0
@@ -71,25 +81,40 @@ def getId(url):
     numId=url[cn+1: len(url)]
     return numId
 
-def correcto(d):
-    d=URL(args=request.args)
-    s=setIDFromURL()
+def divide(d):
+    argu1 =d.split('/')[4]
+    argu2 =d.split('/')[5]
+    return argu1, argu2
+
+def respuesta():
+    dato=URL(args=request.args)
+    s,d=divide(dato)
+    r=correcto(s,d)
+
+    if r == True:
+        userId=db(db.cazador.nickname==session.nickname).select(db.cazador.id)
+        db.sculpturEstado.insert(cazador_id=userId[0].id,pId=s)
+        redirect(URL('chuGame','chuHuntCorrecta',args=s))
+    else:
+        redirect(URL('chuGame','chuHuntIncorrecta',args=s))
+    
+
+def correcto(s,d):
+    rows = db(db.sculpture.id == s ).select()
     f=False
-    if (d==s.title):
-        f=True
-    elif (d==s.author):
-        f=True
-    elif (d==s.material):
-        f=True
-    elif (d==s.country):
-        f=True
-    elif (d==s.yearCreate):
-        f=True
+    for i in rows:
+        if (d==i.title):
+            f=True
+        elif (d==i.author):
+            f=True
+        elif (d==i.material):
+            f=True
+        elif (d==i.country):
+            f=True
+        elif (d==i.yearCreate):
+            f=True
 
     return f
-
-#def correcto():
-#    if session.op1 == (db(db.sculpture.id == setIDFromURL()).select())[0].
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Cambia el color del marcador dependiendo si esta cazada o no
@@ -118,7 +143,7 @@ def showBut(condition, imgC, sc):
         if(condition=='S'):
             but='<a href="chuSculptInfo.html?args='+str(sc)+'" class="btn">Ver info</a>'
         else:
-            but='<a href="chuHunt.html?args='+str(sc)+'" class="btn">Cazar</a>' #56
+            but='<a href="chuHunt.html?args='+str(sc)+'" class="btn">Cazar</a>'
     else:
         but='<a href="#" class="btn">Error</a>';
     return but
@@ -127,39 +152,65 @@ def showBut(condition, imgC, sc):
 #Marcadores
 def getMarkers():
     places = []
+
+    #Usuario actual
+    userId=db(db.cazador.nickname==session.nickname).select(db.cazador.id)
+    uEst=db(db.sculpturEstado.cazador_id == userId[0].id).select()
+    
+
+    #Places
     rows = db(db.place.id >0 ).select()
 
     for row in rows:
+        ima=row.sculpture_id.fileImageNHURL
+        idS=row.sculpture_id
+        lat=row.lat
+        lng=row.lng
+        name=row.name
 
-        #Color del marcador
-        x=setMarkerColor(row.cazada)
-        #Imagen de la escultura
-        imagen= showIMG(row.cazada, row.sculpture_id.fileImageNHURL)
-        #Boton
-        but= showBut(row.cazada, row.sculpture_id.fileImageNHURL, row.sculpture_id)
-        #Codigo html va en este sector
-        html =  (
-                '<div class="container" style="width: 200px;">'
-                    '<center>''<img src=' + imagen + ' style="width: 100%;"/>''</center>'
-                    '<center>''<button>'+ but +'</button>''</center>'
-                '</div>'
-                )
-        #Setea la informacion de los marcadores
-        place = {
-            'lat' : row.lat,
-            'lng' : row.lng,
-            'name' : row.name,
-            'cazada' : row.cazada,
-            'icon': x,
-            'infoWindow' : {
-                'content' : html,
-                'maxWidth' : 200
-            },
-            'onClick':{}
-        }
-        #Agrega un marcador a la lista de marcadores
-        places.append(place)
+        for i in uEst:
+            #Compara la id de palce con la id que deberia almacenarse en pId
+            if str(row.id) == str(i.pId):
+                condition='S'
+                pla=mark(condition, ima, idS, lat, lng, name)
+                places.append(pla)
+
+            #Si no son iguales muestra no cazada
+            elif str(row.id) != str(i.pId):
+                condition='N'
+                pla=mark(condition, ima, idS, lat, lng, name)
+                places.append(pla)
+
     return response.json(places)
+
+def mark(condition, ima, idS, lat, lng, name):
+    #Color del marcador
+    x=setMarkerColor(condition)
+    #Imagen de la escultura
+    imagen= showIMG(condition, ima)
+    #Boton
+    but= showBut(condition, ima, idS)
+    #Codigo html va en este sector
+    html =  (
+            '<div class="container" style="width: 200px;">'
+                '<center>''<img src=' + imagen + ' style="width: 100%;"/>''</center>'
+                '<center>''<button>'+ but +'</button>''</center>'
+            '</div>'
+            )
+    #Setea la informacion de los marcadores
+    place = {
+        'lat' : lat,
+        'lng' : lng,
+        'name' : name,
+        'cazada' : condition,
+        'icon': x,
+        'infoWindow' : {
+            'content' : html,
+            'maxWidth' : 200
+        },
+        'onClick':{}
+    }
+    return place
 
 #///////////////////////////////////////////////////////////////////////////////////////////////#
 #Reorganiza la lista de opciones que se van a mostrar               #Done

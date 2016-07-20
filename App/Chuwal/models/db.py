@@ -183,7 +183,7 @@ db.define_table('place',
 #Tabla de esculturas cazadas por cazador
 db.define_table('sculpturEstado',
                 Field('cazador_id', db.cazador),
-                Field('place_id', db.place),
+                Field('pId', 'text', default='-'),
                 migrate='sculpturEstado.table')
 
 db.place.sculpture_id_requires = IS_IN_DB(db, db.sculpture.id, '%(title)s')

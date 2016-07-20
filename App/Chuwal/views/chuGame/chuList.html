@@ -25,21 +25,21 @@
 						    		<div class="table-responsive">
 										<table class="table table-striped">
 											{{for place in places:}}
-							     								{{
-		                                                    if place.cazada=="S":
-		                                                            title= place.name
-		                                                            estado= "Adquirida"
-		                                                            Button= "Ver"
-		                                                    else:
-		                                                            title= " Desconocida "
-		                                                            estado= "Aún no cazada"
-		                                                            Button= "Cazar"
-		                                                    pass}}
+												{{for i in uEst:}}
+													{{
+													if (str(place.id) == str(i.pId)):
+														condition='S'
+														Button= "Ver"
+
+													elif (str(place.id) != str(i.pId)):
+														condition='N'
+														Button= "Cazar"
+													}}
+												{{pass}}
+											{{pass}}
 											<tr>
 												<th><p class="p"><b>
-												{{=H6(title)}}
-												</b></p></<p><font color="#F44336"><i>{{=H6(estado)}}</i></font></p></th>
-												{{if place.cazada=="N":}}
+												{{if condition=="N":}}
 												<td align="right"><a href="chuHunt.html?args={{=place.sculpture_id}}"><button class="button2"><img src="../static/images/esculturaBloqueada.png" height="60px" widht="60px"/></button></a>
 												{{else:}}
 												<td align="right"><a href="chuSculptInfo.html?args={{=place.sculpture_id}}"><button class="button2"><img src="../static/images/escultura1.png" height="60px" widht="60px"/></button></td>

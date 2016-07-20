@@ -13,19 +13,19 @@
     	<div class="row caja">
       		<div class="thumbnail borde">
         		<center  class="container one" style="border-radius: 5px; background-color:#F6E490; width:100%;">
-            		<img  src="../static/images/esculturas/161.jpg" class="img-responsive" alt="Imagen responsive" width="250" height="250">
+            		<img  src="{{=sculp.fileImageURL}}" class="img-responsive" alt="Imagen responsive" width="250" height="250">
 				
             
         			
-          			<h3><b>Fernando</b></h3>
+          			<h3><b>{{=sculp.title}}</b></h3>
         		
         		
           			<h6 class="ppad">
-            		<p><li><b>Localización:</b> Mitre 1</li>
-		            <li><b>Año:</b> 1963</li>
-		            <li><b>Autor:</b> Victor Marchese</li>
-		            <li><b>Material:</b> Bronce</li>
-		            <li><b>Origen:</b> Argentina</li></p>
+            		<p><li><b>Localización:</b> {{=sculp.address}}</li>
+		            <li><b>Año:</b> {{=sculp.yearCreate}}</li>
+		            <li><b>Autor:</b> {{=sculp.author}}</li>
+		            <li><b>Material:</b> {{=sculp.material}}</li>
+		            <li><b>Origen:</b> {{=sculp.country}}</li></p>
           			</h6>
               		<button><a href="{{=URL('chuGame','chuMap')}}" class="btn btn-dafault">Ver en Mapa</a></button>
               		<br>

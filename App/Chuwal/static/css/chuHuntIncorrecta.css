@@ -1,0 +1,65 @@
+	.imagen{
+		-webkit-filter: blur(5px);
+    	filter: blur(5px);
+	}
+	h3{
+		color:#774111;
+	}
+	.img-thumbnail{
+		background-color:#B37E44;
+		border-color:transparent;
+	}
+	.borde {
+		border-color: transparent;
+		background-color: transparent;
+	}
+	button.btn.jugar{
+		background-color:transparent;
+	}
+	#incorrecto{
+		position:absolute;
+		top:46%;
+		left:57%;
+	}
+@media (min-width: 440px) and (max-width: 600px){
+  h3{
+    font-size: 28px;
+  }
+}
+@media (min-width: 414px) and (max-width: 439px){
+  h3{
+    font-size: 22px;
+  }
+
+}
+@media (min-width: 411px) and (max-width: 413px){
+  h3{
+    font-size: 22px;
+  }
+}
+@media (min-width: 409px) and (max-width: 410px){
+  h3{
+    font-size: 20px;
+  }
+
+}
+@media (min-width: 374px) and (max-width: 408px){
+  h3{
+    font-size: 20px;
+  }
+}
+@media (min-width: 359px) and (max-width: 373px){
+  h3{
+    font-size: 20px;
+  }
+}
+@media (min-width: 318px) and (max-width: 358px){
+   h3 {
+    font-size: 19px;
+  }
+}
+@media (min-width: 200px) and (max-width: 317px){
+   h3 {
+    font-size: 17px;
+  }
+}
